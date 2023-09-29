@@ -1,0 +1,159 @@
+.bgpink {
+    background-image: url("bgDotted.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.body {
+    border: solid 4px;
+    height: 1400px;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 2.5rem;
+    background-color: #f4ffd5;
+}
+
+
+.header {
+    border: solid 4px;
+    height: 120px;
+    width: 89%;
+    margin: 0.3125rem auto;
+    background-image: url('bgDotted.jpg');
+    background-size: cover;
+}
+
+.seperate {
+    border: solid 4px;
+    height: 100px;
+    width: 89%;
+    margin: 0.3125rem auto;
+    background-image: url('bgDotted.jpg');
+    background-repeat: no-repeat;
+    background-size: 56.25rem 6.25rem;
+    
+}
+
+.links {
+    border: solid 4px;
+    height: 320px;
+    width: 89%;
+    margin: 0.3125rem auto;
+    background-image: url('bgDotted.jpg');
+    background-size: 80vw 85vw;
+    background-repeat: no-repeat;       
+}
+
+.navigation {
+    border: solid 4px;
+    height: 90px;
+    width: 89%;
+    margin: 0.3125rem auto;
+    text-align: center;
+    background-color: #55eaff;
+}
+
+.content {
+    border: solid 4px;
+    height: 500px;
+    width: 89%;
+    margin: 0.3125rem auto;
+    background-image: url('');
+    background-repeat: no-repeat; 
+    background-size: cover;    
+}
+
+.footer {
+    border: solid 4px;
+    height: 120px;
+    width: 89%;
+    margin: 0.3125rem auto;
+}
+
+.footer {
+    background-color: #55eaff;
+    text-align: center;
+}
+
+.title {
+    font-size: 5rem;
+    font-weight: bolder;
+    text-align: center;
+    margin: 1.25rem auto;
+    color: white;
+}
+
+.social {
+    font-family: "sofia", sans-seriff;
+}
+
+.hello {
+    font-size: 2.50rem;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.linksocial {
+    font-size: 2.1875rem;
+    border: solid 3px;
+    margin: 1.25rem auto;
+    padding: 0.50rem;
+    border-radius: 20%;
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+    background-color: #80d6ff;
+}
+
+.gallery {
+    border: dotted 3px;
+    width: 80%;
+}
+
+img {
+    width: 25vw;
+}
+
+img:active {
+    transform: scale(3.2);    
+}
+
+.h1gallery {
+    font-size: 5.625rem;
+    font-weight: bolder;
+    color: white;
+    border-radius: 30%;  
+}
+
+.foot {
+    font-size: 4.6875rem;
+    font-weight: bolder;
+    color: white;
+    margin: auto;   
+}
+
+@media(orientation:portrait){
+    .linksocial {
+        font-size: 1.2rem;
+    }
+    
+    .links {
+        height: 360px;
+    }
+    
+    .foot {
+        font-size: 3.5rem;
+    }
+    
+    .title {
+        font-size: 6rem;
+    }
+    
+    .seperate {
+        height: 30px;
+    }
+}
+
+.linksocial:hover {
+    background-color: #86ff6a;
+}
