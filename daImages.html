@@ -7,9 +7,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Gallery</title>
     <style>
-        #container {
-    display: flex;
-    flex-flow: row wrap;
+body {
+    background-color:#ffa995;
+}
+        
+#container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#container img.large{
+    width: 100%;
+    height: auto;
+}
+
+#container img.medium{
+     width: 90%;
+    height: auto;
+}
+
+#container img.small{
+     width: 75%;
+    height: auto;
 }
 
 #banner {
@@ -49,6 +68,14 @@
 
 img {
     margin: auto;
+    border: solid 5px;
+    border-color: white;
+}
+
+@media(min-width:760px){
+    #container {
+    grid-template-columns: repeat(5, 1fr);
+    }
 }
     </style>
 </head>
@@ -57,53 +84,46 @@ img {
             <p id="galText">Gallery</p>
      </div>
     <div id="container">
-        <a href="received_206600409102580.jpeg">
-        <img src="received_206600409102580.jpeg" alt="" srcset="" height="90px" width="90px"></a>
-        <img src="" alt="" srcset="" height="90px" width="90px">
-        <img src="" alt="" srcset="" height="90px" width="90px">
-        <img src="" alt="" srcset="" height="90px" width="90px">
-        <img src="" alt="" srcset="" height="90px" width="90px">
-        <img src="" alt="" srcset="" height="90px" width="90px">
-        <img src="" alt="" srcset="" height="90px" width="90px">
-        <img src="" alt="" srcset="" height="90px" width="90px">
-        <img src="" alt="" srcset="" height="90px" width="90px">
-        <img src="" alt="" srcset="" height="90px" width="90px">
-        <img src="" alt="" srcset="" height="90px" width="90px">
-        <img src="" alt="" srcset="" height="90px" width="90px">
-        <img src="" alt="" srcset="" height="90px" width="90px">
-        <img src="" alt="" srcset="" height="90px" width="90px">
-        <img src="" alt="" srcset="" height="90px" width="90px">
-        <img src="" alt="" srcset="" height="90px" width="90px">
-        <img src="" alt="" srcset="" height="90px" width="90px">
-        <img src="" alt="" srcset="" height="90px" width="90px">
-        <img src="" alt="" srcset="" height="90px" width="90px">
-        <img src="" alt="" srcset="" height="90px" width="90px">
-        <img src="" alt="" srcset="" height="90px" width="90px">
-        <img src="" alt="" srcset="" height="90px" width="90px">
-        <img src="" alt="" srcset="" height="90px" width="90px">
-        <img src="" alt="" srcset="" height="90px" width="90px">
-        <img src="" alt="" srcset="" height="90px" width="90px">
-        <img src="" alt="" srcset="" height="90px" width="90px">
-        <img src="" alt="" srcset="" height="90px" width="90px">
-        <img src="" alt="" srcset="" height="90px" width="90px">
-        <img src="" alt="" srcset="" height="90px" width="90px">
-        <img src="" alt="" srcset="" height="90px" width="90px">
-        <img src="" alt="" srcset="" height="90px" width="90px">
-        <img src="" alt="" srcset="" height="90px" width="90px">
-        <img src="" alt="" srcset="" height="90px" width="90px">
-        <img src="" alt="" srcset="" height="90px" width="90px">
-        <img src="" alt="" srcset="" height="90px" width="90px">
-        <img src="" alt="" srcset="" height="90px" width="90px">
-        <img src="" alt="" srcset="" height="90px" width="90px">
-        <img src="" alt="" srcset="" height="90px" width="90px">
-        <img src="" alt="" srcset="" height="90px" width="90px">
-        <img src="" alt="" srcset="" height="90px" width="90px">
-        <img src="" alt="" srcset="" height="90px" width="90px">
-        <img src="" alt="" srcset="" height="90px" width="90px">
-        <img src="" alt="" srcset="" height="90px" width="90px">
-        <img src="" alt="" srcset="" height="90px" width="90px">
-        <img src="" alt="" srcset="" height="90px" width="90px">
-        </a>
+        <img src="received_206600409102580.jpeg" alt="" srcset="" height="200" width="200vw" class="medium"></a>
+        <img src="received_206600409102580.jpeg" alt="" srcset="" height="200" width="200vw" class="small"></a>
+        <img src="received_206600409102580.jpeg" alt="" srcset="" height="200" width="200vw" class="medium"></a>
+        <img src="received_206600409102580.jpeg" alt="" srcset="" height="200" width="200vw" class="small"></a>
+        <img src="received_206600409102580.jpeg" alt="" srcset="" height="200" width="200vw" class="medium"></a>
+        <img src="received_206600409102580.jpeg" alt="" srcset="" height="200" width="200vw" class="large"></a>
+        <img src="received_206600409102580.jpeg" alt="" srcset="" height="200" width="200vw" class="medium"></a>
+        <img src="received_206600409102580.jpeg" alt="" srcset="" height="200" width="200vw" class="large"></a>
+        <img src="received_206600409102580.jpeg" alt="" srcset="" height="200" width="200vw" class="medium"></a>
+        <img src="received_206600409102580.jpeg" alt="" srcset="" height="200" width="200vw" class="small"></a>
+        <img src="received_206600409102580.jpeg" alt="" srcset="" height="200" width="200vw" class="medium"></a>
+        <img src="received_206600409102580.jpeg" alt="" srcset="" height="200" width="200vw" class="small"></a>
+        <img src="received_206600409102580.jpeg" alt="" srcset="" height="200" width="200vw" class="medium"></a>
+        <img src="received_206600409102580.jpeg" alt="" srcset="" height="200" width="200vw" class="large"></a>
+        <img src="received_206600409102580.jpeg" alt="" srcset="" height="200" width="200vw" class="medium"></a>
+        <img src="received_206600409102580.jpeg" alt="" srcset="" height="200" width="200vw" class="large"></a>
+        <img src="received_206600409102580.jpeg" alt="" srcset="" height="200" width="200vw" class="medium"></a>
+        <img src="received_206600409102580.jpeg" alt="" srcset="" height="200" width="200vw" class="small"></a>
+        <img src="received_206600409102580.jpeg" alt="" srcset="" height="200" width="200vw" class="medium"></a>
+        <img src="received_206600409102580.jpeg" alt="" srcset="" height="200" width="200vw" class="small"></a>
+        <img src="received_206600409102580.jpeg" alt="" srcset="" height="200" width="200vw" class="medium"></a>
+        <img src="received_206600409102580.jpeg" alt="" srcset="" height="200" width="200vw" class="large"></a>
+        <img src="received_206600409102580.jpeg" alt="" srcset="" height="200" width="200vw" class="medium"></a>
+        <img src="received_206600409102580.jpeg" alt="" srcset="" height="200" width="200vw" class="large"></a>
+        <img src="received_206600409102580.jpeg" alt="" srcset="" height="200" width="200vw" class="medium"></a>
+        <img src="received_206600409102580.jpeg" alt="" srcset="" height="200" width="200vw" class="small"></a>
+        <img src="received_206600409102580.jpeg" alt="" srcset="" height="200" width="200vw" class="medium"></a>
+        <img src="received_206600409102580.jpeg" alt="" srcset="" height="200" width="200vw" class="small"></a>
+        <img src="received_206600409102580.jpeg" alt="" srcset="" height="200" width="200vw" class="medium"></a>
+        <img src="received_206600409102580.jpeg" alt="" srcset="" height="200" width="200vw" class="large"></a>
+        <img src="received_206600409102580.jpeg" alt="" srcset="" height="200" width="200vw" class="medium"></a>
+        <img src="received_206600409102580.jpeg" alt="" srcset="" height="200" width="200vw" class="large"></a>
+        <img src="received_206600409102580.jpeg" alt="" srcset="" height="200" width="200vw" class="medium"></a>
+        <img src="received_206600409102580.jpeg" alt="" srcset="" height="200" width="200vw" class="small"></a>
+        <img src="received_206600409102580.jpeg" alt="" srcset="" height="200" width="200vw" class="medium"></a>
+        <img src="received_206600409102580.jpeg" alt="" srcset="" height="200" width="200vw" class="small"></a>
+        <img src="received_206600409102580.jpeg" alt="" srcset="" height="200" width="200vw" class="medium"></a>
+        <img src="received_206600409102580.jpeg" alt="" srcset="" height="200" width="200vw" class="large"></a>
+        <img src="received_206600409102580.jpeg" alt="" srcset="" height="200" width="200vw" class="medium"></a>
+        <img src="received_206600409102580.jpeg" alt="" srcset="" height="200" width="200vw" class="large"></a>
     </div>     
     </div>
 </body>
