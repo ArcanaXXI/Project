@@ -27,6 +27,8 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 9999;
+    height: 500px;
+    width: 400px;
 }
 
 #container img.large{
@@ -86,9 +88,58 @@ img {
     border-color: white;
 }
 
-@media(min-width:760px){
+@media(min-width:760px) and (max-width: 920px){
     #container {
-    grid-template-columns: repeat(5, 1fr);
+      grid-template-columns: repeat(5, 1fr);
+    }
+    
+    .enlarged-image {
+      height: 760px;
+      width: 700px; 
+    }
+}
+
+@media(min-width: 920px) and (max-width: 1200px){
+    .enlarged-image {
+      height: 920px;
+      width: 860px; 
+    }
+    
+    #container {
+      grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+@media(min-width: 1200px) and (max-width: 1800px){
+    .enlarged-image {
+      height: 1200px;
+      width: 1140px; 
+    }
+    
+    #container {
+      grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+@media(min-width: 1800px) and (max-width: 2400px){
+    .enlarged-image {
+      height: 1800px;
+      width: 1600px; 
+    }
+    
+    #container {
+      grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+@media(min-width: 2400px){
+    .enlarged-image {
+      height: 1800px;
+      width: 1900px; 
+    }
+    
+    #container {
+      grid-template-columns: repeat(5, 1fr);
     }
 }
     </style>
@@ -118,26 +169,26 @@ img {
         <img src="received_206600409102580.jpeg" alt="" srcset="" height="200" width="200vw" class="small" onclick="enlargeImage(this)"></a>
         <img src="received_206600409102580.jpeg" alt="" srcset="" height="200" width="200vw" class="medium" onclick="enlargeImage(this)"></a>
         <img src="received_206600409102580.jpeg" alt="" srcset="" height="200" width="200vw" class="small" onclick="enlargeImage(this)"></a>
-        <img src="received_206600409102580.jpeg" alt="" srcset="" height="200" width="200vw" class="medium"></a>
-        <img src="received_206600409102580.jpeg" alt="" srcset="" height="200" width="200vw" class="large"></a>
-        <img src="received_206600409102580.jpeg" alt="" srcset="" height="200" width="200vw" class="medium"></a>
-        <img src="received_206600409102580.jpeg" alt="" srcset="" height="200" width="200vw" class="large"></a>
-        <img src="received_206600409102580.jpeg" alt="" srcset="" height="200" width="200vw" class="medium"></a>
-        <img src="received_206600409102580.jpeg" alt="" srcset="" height="200" width="200vw" class="small"></a>
-        <img src="received_206600409102580.jpeg" alt="" srcset="" height="200" width="200vw" class="medium"></a>
-        <img src="received_206600409102580.jpeg" alt="" srcset="" height="200" width="200vw" class="small"></a>
-        <img src="received_206600409102580.jpeg" alt="" srcset="" height="200" width="200vw" class="medium"></a>
-        <img src="received_206600409102580.jpeg" alt="" srcset="" height="200" width="200vw" class="large"></a>
-        <img src="received_206600409102580.jpeg" alt="" srcset="" height="200" width="200vw" class="medium"></a>
-        <img src="received_206600409102580.jpeg" alt="" srcset="" height="200" width="200vw" class="large"></a>
-        <img src="received_206600409102580.jpeg" alt="" srcset="" height="200" width="200vw" class="medium"></a>
-        <img src="received_206600409102580.jpeg" alt="" srcset="" height="200" width="200vw" class="small"></a>
-        <img src="received_206600409102580.jpeg" alt="" srcset="" height="200" width="200vw" class="medium"></a>
-        <img src="received_206600409102580.jpeg" alt="" srcset="" height="200" width="200vw" class="small"></a>
-        <img src="received_206600409102580.jpeg" alt="" srcset="" height="200" width="200vw" class="medium"></a>
-        <img src="received_206600409102580.jpeg" alt="" srcset="" height="200" width="200vw" class="large"></a>
-        <img src="received_206600409102580.jpeg" alt="" srcset="" height="200" width="200vw" class="medium"></a>
-        <img src="received_206600409102580.jpeg" alt="" srcset="" height="200" width="200vw" class="large"></a>
+        <img src="received_206600409102580.jpeg" alt="" srcset="" height="200" width="200vw" class="medium" onclick="enlargeImage(this)"></a>
+        <img src="received_206600409102580.jpeg" alt="" srcset="" height="200" width="200vw" class="large" onclick="enlargeImage(this)"></a>
+        <img src="received_206600409102580.jpeg" alt="" srcset="" height="200" width="200vw" class="medium" onclick="enlargeImage(this)"></a>
+        <img src="received_206600409102580.jpeg" alt="" srcset="" height="200" width="200vw" class="large" onclick="enlargeImage(this)"></a>
+        <img src="received_206600409102580.jpeg" alt="" srcset="" height="200" width="200vw" class="medium" onclick="enlargeImage(this)"></a>
+        <img src="received_206600409102580.jpeg" alt="" srcset="" height="200" width="200vw" class="small" onclick="enlargeImage(this)"></a>
+        <img src="received_206600409102580.jpeg" alt="" srcset="" height="200" width="200vw" class="medium" onclick="enlargeImage(this)"></a>
+        <img src="received_206600409102580.jpeg" alt="" srcset="" height="200" width="200vw" class="small" onclick="enlargeImage(this)"></a>
+        <img src="received_206600409102580.jpeg" alt="" srcset="" height="200" width="200vw" class="medium" onclick="enlargeImage(this)"></a>
+        <img src="received_206600409102580.jpeg" alt="" srcset="" height="200" width="200vw" class="large" onclick="enlargeImage(this)"></a>
+        <img src="received_206600409102580.jpeg" alt="" srcset="" height="200" width="200vw" class="medium" onclick="enlargeImage(this)"></a>
+        <img src="received_206600409102580.jpeg" alt="" srcset="" height="200" width="200vw" class="large" onclick="enlargeImage(this)"></a>
+        <img src="received_206600409102580.jpeg" alt="" srcset="" height="200" width="200vw" class="medium" onclick="enlargeImage(this)"></a>
+        <img src="received_206600409102580.jpeg" alt="" srcset="" height="200" width="200vw" class="small" onclick="enlargeImage(this)"></a>
+        <img src="received_206600409102580.jpeg" alt="" srcset="" height="200" width="200vw" class="medium" onclick="enlargeImage(this)"></a>
+        <img src="received_206600409102580.jpeg" alt="" srcset="" height="200" width="200vw" class="small" onclick="enlargeImage(this)"></a>
+        <img src="received_206600409102580.jpeg" alt="" srcset="" height="200" width="200vw" class="medium" onclick="enlargeImage(this)"></a>
+        <img src="received_206600409102580.jpeg" alt="" srcset="" height="200" width="200vw" class="large" onclick="enlargeImage(this)"></a>
+        <img src="received_206600409102580.jpeg" alt="" srcset="" height="200" width="200vw" class="medium" onclick="enlargeImage(this)"></a>
+        <img src="received_206600409102580.jpeg" alt="" srcset="" height="200" width="200vw" class="large" onclick="enlargeImage(this)"></a>
     </div>     
     </div>
     <script>
