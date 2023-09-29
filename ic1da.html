@@ -1,9 +1,339 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" style="text/css" href="da.css">
-    <meta name="viewport" content="width=480-width, initial-scale=1.0"/>
+    <link rel="stylesheet" style="text/css" href="">
+    <meta name="viewport" content="width=480, initial-scale=1.0"/>
     <title>Summer Lemon</title>
+    <style>
+        .bgpink {
+    background-image: url("bgDotted.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.body {
+    border: solid 4px;
+    height: 1400px;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 2.5rem;
+    background-color: #f4ffd5;
+}
+
+
+.header {
+    border: solid 4px;
+    height: 120px;
+    width: 89%;
+    margin: 0.3125rem auto;
+    background-image: url('bgDotted.jpg');
+    background-size: cover;
+}
+
+.seperate {
+    border: solid 4px;
+    height: 100px;
+    width: 89%;
+    margin: 0.3125rem auto;
+    background-image: url('bgDotted.jpg');
+    background-repeat: no-repeat;
+    
+}
+
+.links {
+    border: solid 4px;
+    height: 320px;
+    width: 89%;
+    margin: 0.3125rem auto;
+    background-image: url('bgDotted.jpg');
+    background-size: 100vw 100vw;      
+}
+
+.navigation {
+    border: solid 4px;
+    height: 90px;
+    width: 89%;
+    margin: 0.3125rem auto;
+    text-align: center;
+    background-color: #55eaff;
+}
+
+.content {
+    border: solid 4px;
+    height: 500px;
+    width: 89%;
+    margin: 0.3125rem auto;
+    background-image: url('');
+    background-repeat: no-repeat; 
+    background-size: cover;    
+}
+
+.footer {
+    border: solid 4px;
+    height: 120px;
+    width: 89%;
+    margin: 0.3125rem auto;
+}
+
+.footer {
+    background-color: #55eaff;
+    text-align: center;
+}
+
+.title {
+    font-size: 5rem;
+    font-weight: bolder;
+    text-align: center;
+    margin: 1.25rem auto;
+    color: white;
+}
+
+.social {
+    font-family: "sofia", sans-seriff;
+}
+
+.hello {
+    font-size: 2.50rem;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.linksocial {
+    font-size: 2.1875rem;
+    border: solid 3px;
+    margin: 1.25rem auto;
+    padding: 0.50rem;
+    border-radius: 20%;
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+    background-color: #80d6ff;
+}
+
+.gallery {
+    border: dotted 3px;
+    width: 80%;
+}
+
+img {
+    width: 25vw;
+}
+
+img:active {
+    transform: scale(3.2);    
+}
+
+.h1gallery {
+    font-size: 5.625rem;
+    font-weight: bolder;
+    color: white;
+    border-radius: 30%;  
+}
+
+.foot {
+    font-size: 4.6875rem;
+    font-weight: bolder;
+    color: white;
+    margin: auto;   
+}
+
+@media(orientation:portrait){
+    .linksocial {
+        font-size: 1.2rem;
+    }
+    
+    .links {
+        height: 360px;
+    }
+    
+    .foot {
+        font-size: 3.5rem;
+    }
+    
+    .title {
+        font-size: 6rem;
+    }
+    
+    .seperate {
+        height: 30px;
+    }
+}
+
+.linksocial:hover {
+    background-color: #86ff6a;
+}
+
+@media(min-width: 320px) and (max-width: 375px){
+    .h1gallery {
+        font-size: 3rem;
+    }
+    
+    .hello {
+        font-size: 1.2rem;
+    }
+    .socialContainer{
+       display: flex;
+       flex-flow: row wrap;
+       align-items: flex-start;
+    }
+    
+    .linksocial {
+    font-size: 1rem;
+    border: solid 3px;
+    margin: 1rem auto;    
+    padding: 0.43rem;
+    border-radius: 20%;
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+    background-color: #80d6ff;
+    }
+    
+    .links {
+    border: solid 4px;
+    height: 450px;
+    width: 89%;
+    margin: 0.3125rem auto;
+    background-image: url('bgDotted.jpg');
+    background-size: 100vw 100vw;      
+    }
+    
+    .foot{
+        font-size: 2rem;
+    }
+    
+   .navigation{
+       height: 50px;
+   }
+   
+   .footer{
+       height: 60px;
+   }
+   
+   img{
+       height: 80px;
+       width: 75px;
+   }
+   
+   .gallery{
+       height: 236px;
+   }
+  
+   .content{
+       height: 265px;
+   }
+   
+   .body{
+       height: 1075px;
+   }
+}
+
+@media(min-width: 375px) and (max-width: 435px){
+    .h1gallery {
+        font-size: 3rem;
+    }
+    
+    .hello {
+        font-size: 1.8rem;
+    }
+    .socialContainer{
+       display: flex;
+       flex-flow: row wrap;
+       align-items: flex-start;
+    }
+    
+    .linksocial {
+    font-size: 1rem;
+    border: solid 3px;
+    margin: 1rem auto;    
+    padding: 0.43rem;
+    border-radius: 20%;
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+    background-color: #80d6ff;
+    }
+    
+    .links {
+    border: solid 4px;
+    height: 412px;
+    width: 89%;
+    margin: 0.3125rem auto;
+    background-image: url('bgDotted.jpg');
+    background-size: 100vw 100vw;      
+    }
+    
+    .foot{
+        font-size: 2.5rem;
+    }
+    
+   .navigation{
+       height: 50px;
+   }
+   
+   .footer{
+       height: 75px;
+   }
+   
+   img{
+       height: 80px;
+       width: 89px;
+   }
+   
+   .gallery{
+       height: 236px;
+   }
+  
+   .content{
+       height: 265px;
+   }
+   
+   .body{
+       height: 1075px;
+   }
+}
+
+@media(min-width: 435px) and (max-width: 480px){
+    img{
+        width: 24.5vw;
+    }
+    
+    .foot{
+        font-size: 3rem
+    }
+    
+    .links{
+        height: 390px;
+    }
+}
+    
+    @media(min-width: 765px) and (max-width: 1450px){
+        .socialContainer{
+            display: flex;
+            justify-content: space-around;
+        }
+        
+        .links{
+            height: 415px;
+        }
+        
+        .linksocial{
+            font-size: 2.5rem;
+        }
+        
+        img{
+            width: 26vw;
+        }
+        
+        .foot{
+            font-size: 5rem;
+        }
+        
+        .hello{
+            font-size: 3rem;
+        }
+    }
+    </style>
 </head>
 <body class="bgpink">
 <div class="body">
@@ -14,14 +344,15 @@
         
     </div>    
     <div class="links">
-        <h1 class="social"><p class="hello"><i>Hello!</p> We are the section 1C1DA and we are happy you're here<br><br>
+        <h1 class="social"><p class="hello"><i>Hello!</i></p> We are the section 1C1DA and we are happy you're here<br><br>
 
 Consider checking our menories together (⁠☆⁠▽⁠☆⁠)</i></h1>
-
+    <div class="socialContainer">
     <a href="daImages.html" class="linksocial">Images</a>
     <a href="videos" class="linksocial">Videos</a>
     <a href="" class="linksocial">Students</a>
-    <a href="" class="linksocial">Teachers</a>
+    <a href="" class="linksocial" id="teach">Teachers</a>
+    </div>
     </div>
     <div class="navigation">
         <i class="h1gallery">Preview</i>
