@@ -1,433 +1,473 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <link rel="stylesheet" style="text/css" href="">
-    <meta name="viewport" content="width-device-width, initial-scale=1.0"/>
-    <title>IC1DA</title>
-    <style>
-        .bgpink {
-    background-image: url("bgDotted.jpg");
-    background-size: cover;
-}
-
-.body {
-    border: solid 4px;
-    height: 1400px;
-    width: 90%;
-    margin: 0 auto;
-    margin-top: 2.5rem;
-    background-color: #f4ffd5;
-}
-
-
-.header {
-    border: solid 4px;
-    height: 120px;
-    width: 89%;
-    margin: 0.3125rem auto;
-    background-image: url('bgDotted.jpg');
-    background-size: cover;
-}
-
-.seperate {
-    border: solid 4px;
-    height: 10px;
-    width: 89%;
-    margin: 0.3125rem auto;
-    background-image: url('bgDotted.jpg');
-    
-}
-
-.links {
-    border: solid 4px;
-    height: 320px;
-    width: 89%;
-    margin: 0.3125rem auto;
-    background-image: url('bgDotted.jpg');
-    background-size: 100vw 100vw;      
-}
-
-.navigation {
-    border: solid 4px;
-    height: 90px;
-    width: 89%;
-    margin: 0.3125rem auto;
-    text-align: center;
-    background-color: #55eaff;
-}
-
-.content {
-    border: solid 4px;
-    height: 500px;
-    width: 89%;
-    margin: 0.3125rem auto;
-    background-image: url('');
-    background-repeat: no-repeat; 
-    background-size: cover;    
-}
-
-.footer {
-    border: solid 4px;
-    height: 120px;
-    width: 89%;
-    margin: 0.3125rem auto;
-}
-
-.footer {
-    background-color: #55eaff;
-    text-align: center;
-}
-
-.title {
-    font-size: 5rem;
-    font-weight: bolder;
-    text-align: center;
-    margin: 1.25rem auto;
-    color: white;
-}
-
-.social {
-    font-family: "sofia", sans-seriff;
-}
-
-.hello {
-    font-size: 2.50rem;
-    font-weight: bolder;
-    text-align: center;
-}
-
-.linksocial {
-    font-size: 2.1875rem;
-    border: solid 3px;
-    margin: 1.25rem auto;
-    padding: 0.50rem;
-    border-radius: 20%;
-    text-decoration: none;
-    color: white;
-    font-weight: bolder;
-    background-color: #80d6ff;
-}
-
-.gallery {
-    border: dotted 3px;
-    width: 80%;
-}
-
-img {
-    width: 25vw;
-}
-
-img:active {
-    transform: scale(3.2);    
-}
-
-.h1gallery {
-    font-size: 5.625rem;
-    font-weight: bolder;
-    color: white;
-    border-radius: 30%;  
-}
-
-.foot {
-    font-size: 4.6875rem;
-    font-weight: bolder;
-    color: white;
-    margin: auto;   
-}
-
-.linksocial:hover {
-    background-color: #86ff6a;
-}
-
-@media(min-width: 260px) and (max-width: 375px){
-    .h1gallery {
-        font-size: 3rem;
-    }
-    
-    .hello {
-        font-size: 1.3rem;
-    }
-    .socialContainer{
-       display: flex;
-       flex-flow: row nowrap;
-       align-items: flex-start;
-    }
-    
-    .linksocial {
-    font-size: 0.7rem;
-    border: solid 3px;
-    margin: 1rem auto;        
-    padding: 0.43rem;
-    border-radius: 20%;
-    text-decoration: none;
-    color: white;
-    font-weight: bolder;
-    background-color: #80d6ff;
-    }
-    
-    .links {
-    border: solid 4px;
-    height: 200px;
-    width: 89%;
-    background-image: url('bgDotted.jpg');
-    background-size: 100vw 100vw;      
-    }
-    
-    .foot{
-        font-size: 2.5rem;
-    }
-    
-   .navigation{
-       height: 50px;
-   }
-   
-   .footer{
-       height: 80px;
-   }
-   
-   img{
-       height: 80px;
-       width: 24vw;
-   }
-   
-   .gallery{
-       height: 236px;
-   }
+<!DOCTYPE html> 
+ <html lang="en"> 
+ <head> 
+     <link rel="stylesheet" style="text/css" href=""> 
+     <meta name="viewport" content="width-device-width, initial-scale=1.0"/> 
+     <title>IC1DA</title> 
+     <style> 
+ .bgpink { 
+     background-image: url("bgDotted.jpg"); 
+     background-size: cover; 
+ } 
   
-   .content{
-       height: 265px;
-   }
-   
-   .body{
-       height: 900px;
-   }
-}
-
-@media(min-width: 375px) and (max-width: 435px){
-    .h1gallery {
-        font-size: 3rem;
-    }
-    
-    .hello {
-        font-size: 1.8rem;
-    }
-    .socialContainer{
-       display: flex;
-       flex-flow: row wrap;
-       align-items: flex-start;
-    }
-    
-    .linksocial {
-    font-size: 1rem;
-    border: solid 3px;
-    margin: 1rem auto;    
-    padding: 0.43rem;
-    border-radius: 20%;
-    text-decoration: none;
-    color: white;
-    font-weight: bolder;
-    background-color: #80d6ff;
-    }
-    
-    .links {
-    border: solid 4px;
-    height: 330px;
-    width: 89%;
-    margin: 0.3125rem auto;
-    background-image: url('bgDotted.jpg');
-    background-size: 100vw 100vw;      
-    }
-    
-    .foot{
-        font-size: 2.5rem;
-    }
-    
-   .navigation{
-       height: 50px;
-   }
-   
-   .footer{
-       height: 75px;
-   }
-   
-   img{
-       height: 80px;
-       width: 89px;
-   }
-   
-   .gallery{
-       height: 236px;
-   }
+ .body { 
+     border: solid 4px; 
+     height: 1400px; 
+     width: 90%; 
+     margin: 0 auto; 
+     margin-top: 2.5rem; 
+     background-color: #f4ffd5; 
+ } 
   
-   .content{
-       height: 265px;
-   }
-   
-   .body{
-       height: 950px;
-   }
+  
+ .header { 
+     border: solid 4px; 
+     height: 120px; 
+     width: 89%; 
+     margin: 0.3125rem auto; 
+     background-image: url('bgDotted.jpg'); 
+     background-size: cover; 
+ } 
+  
+ .seperate { 
+     border: solid 4px; 
+     height: 10px; 
+     width: 89%; 
+     margin: 0.3125rem auto; 
+     background-image: url('bgDotted.jpg'); 
+  
+ } 
+  
+ .links { 
+     border: solid 4px; 
+     height: 320px; 
+     width: 89%; 
+     margin: 0.3125rem auto; 
+     background-image: url('bgDotted.jpg'); 
+     background-size: 100vw 100vw;       
+ } 
+  
+ .navigation { 
+     border: solid 4px; 
+     height: 90px; 
+     width: 89%; 
+     margin: 0.3125rem auto; 
+     text-align: center; 
+     background-color: #55eaff; 
+ } 
+  
+ .content { 
+     border: solid 4px; 
+     height: 500px; 
+     width: 89%; 
+     margin: 0.3125rem auto; 
+     background-image: url(''); 
+     background-repeat: no-repeat;  
+     background-size: cover;     
+ } 
+  
+ .footer { 
+     border: solid 4px; 
+     height: 120px; 
+     width: 89%; 
+     margin: 0.3125rem auto; 
+ } 
+  
+ .footer { 
+     background-color: #55eaff; 
+     text-align: center; 
+ } 
+  
+ .title { 
+     font-size: 5rem; 
+     font-weight: bolder; 
+     text-align: center; 
+     margin: 1.25rem auto; 
+     color: white; 
+ } 
+  
+ .social { 
+     font-family: "sofia", sans-seriff; 
+ } 
+  
+ .hello { 
+     font-size: 2.50rem; 
+     font-weight: bolder; 
+     text-align: center; 
+ } 
+  
+ .linksocial { 
+     font-size: 2.1875rem; 
+     border: solid 3px; 
+     margin: 1.25rem auto; 
+     padding: 0.50rem; 
+     border-radius: 20%; 
+     text-decoration: none; 
+     color: white; 
+     font-weight: bolder; 
+     background-color: #80d6ff; 
+ } 
+  
+ .gallery { 
+     border: dotted 3px; 
+     width: 80%; 
+ } 
+  
+ img { 
+     width: 25vw; 
+ } 
+  
+ img:active { 
+     transform: scale(3.2);     
+ } 
+  
+ .h1gallery { 
+     font-size: 5.625rem; 
+     font-weight: bolder; 
+     color: white; 
+     border-radius: 30%;   
+ } 
+  
+ .foot { 
+     font-size: 4.6875rem; 
+     font-weight: bolder; 
+     color: white; 
+     margin: auto;    
+ } 
+  
+ .linksocial:hover { 
+     background-color: #86ff6a; 
+ } 
+  
+ @media(min-width: 260px) and (max-width: 375px){ 
+     .h1gallery { 
+         font-size: 3rem; 
+     } 
+  
+     .hello { 
+         font-size: 1.3rem; 
+     } 
+     .socialContainer{ 
+        display: flex; 
+        flex-flow: row nowrap; 
+        align-items: flex-start; 
+     } 
+  
+     .linksocial { 
+     font-size: 0.7rem; 
+     border: solid 3px; 
+     margin: 1rem auto;         
+     padding: 0.43rem; 
+     border-radius: 20%; 
+     text-decoration: none; 
+     color: white; 
+     font-weight: bolder; 
+     background-color: #80d6ff; 
+     } 
+  
+     .links { 
+     border: solid 4px; 
+     height: 200px; 
+     width: 89%; 
+     background-image: url('bgDotted.jpg'); 
+     background-size: 100vw 100vw;       
+     } 
+  
+     .foot{ 
+         font-size: 2.5rem; 
+     } 
+  
+    .navigation{ 
+        height: 50px; 
+    } 
+  
+    .footer{ 
+        height: 80px; 
+    } 
+  
+    img{ 
+        height: 80px; 
+        width: 24vw; 
+    } 
+  
+    .gallery{ 
+        height: 236px; 
+    } 
+  
+    .content{ 
+        height: 265px; 
+    } 
+  
+    .body{ 
+        height: 900px; 
+    } 
+ } 
+  
+ @media(min-width: 375px) and (max-width: 435px){ 
+     .h1gallery { 
+         font-size: 3rem; 
+     } 
+  
+     .hello { 
+         font-size: 1.8rem; 
+     } 
+     .socialContainer{ 
+        display: flex; 
+        flex-flow: row wrap; 
+        align-items: flex-start; 
+     } 
+  
+     .linksocial { 
+     font-size: 1rem; 
+     border: solid 3px; 
+     margin: 1rem auto;     
+     padding: 0.43rem; 
+     border-radius: 20%; 
+     text-decoration: none; 
+     color: white; 
+     font-weight: bolder; 
+     background-color: #80d6ff; 
+     } 
+  
+     .links { 
+     border: solid 4px; 
+     height: 330px; 
+     width: 89%; 
+     margin: 0.3125rem auto; 
+     background-image: url('bgDotted.jpg'); 
+     background-size: 100vw 100vw;       
+     } 
+  
+     .foot{ 
+         font-size: 2.5rem; 
+     } 
+  
+    .navigation{ 
+        height: 50px; 
+    } 
+  
+    .footer{ 
+        height: 75px; 
+    } 
+  
+    img{ 
+        height: 80px; 
+        width: 89px; 
+    } 
+  
+    .gallery{ 
+        height: 236px; 
+    } 
+  
+    .content{ 
+        height: 265px; 
+    } 
+  
+    .body{ 
+        height: 950px; 
+    } 
+ } 
+  
+ @media(min-width: 435px) and (max-width: 480px){ 
+     img{ 
+         width: 24.5vw; 
+     } 
+  
+     .foot{ 
+         font-size: 3rem 
+     } 
+  
+     .links{ 
+         height: 500px; 
+     } 
+  
+     .footer { 
+         height: 100px; 
+     } 
+  
+     .linksocial { 
+         font-size: 1rem; 
+     } 
+  
+     .socialContainer { 
+         display: flex; 
+     } 
+ } 
+  
+ @media(min-width: 765px) and (max-width: 780px){ 
+         .socialContainer{ 
+             display: flex; 
+             justify-content: space-around; 
+         } 
+  
+         .links{ 
+             height: 430px; 
+         } 
+  
+         .linksocial{ 
+             font-size: 2.5rem; 
+         } 
+  
+         img{ 
+             width: 25.5vw; 
+         } 
+  
+         .foot{ 
+             font-size: 5rem; 
+         } 
+  
+         .hello{ 
+             font-size: 3rem; 
+         } 
+  
+         .footer{ 
+             height: 150px 
+         } 
+ } 
+  
+@media(min-width: 781px) and (max-width: 1440px){ 
+         .linksocial{ 
+             font-size: 2.5rem; 
+         } 
+  
+         .links{ 
+             height: 340px; 
+         } 
+  
+         .body{ 
+             height: 1300px; 
+         } 
+  
+         .footer{ 
+             height: 80px; 
+         } 
+  
+         img { 
+             width: 25.6vw; 
+         } 
+  
+         .socialContainer { 
+             display: flex;  
+         } 
+ } 
+  
+@media(min-width: 1440px) and (max-width: 2200px){ 
+         .title {
+             font-size: 6rem;
+         }
+       
+         img { 
+             width:26.3vw; 
+             height: 300px; 
+         } 
+  
+         .content { 
+             height: 910px; 
+         } 
+  
+         .body { 
+             height: 1800px; 
+         } 
+  
+         .gallery { 
+             height: 910px; 
+         } 
+  
+         .socialContainer { 
+             display: flex; 
+             justify-content: center; 
+         } 
+  
+         .links { 
+             height: 380px 
+         } 
+  
+         .linksocial { 
+             font-size: 3rem; 
+         } 
+       }  
+       
+@media(min-width: 2200px){
+    .title {
+             font-size: 6rem;
+         }
+       
+         img { 
+             width:26.3vw; 
+             height: 300px; 
+         } 
+  
+         .content { 
+             height: 910px; 
+         } 
+  
+         .body { 
+             height: 1800px; 
+         } 
+  
+         .gallery { 
+             height: 910px; 
+         } 
+  
+         .socialContainer { 
+             display: flex; 
+             justify-content: center; 
+         } 
+  
+         .links { 
+             height: 380px 
+         } 
+  
+         .linksocial { 
+             font-size: 3rem; 
 }
-
-@media(min-width: 435px) and (max-width: 480px){
-    img{
-        width: 24.5vw;
-    }
-    
-    .foot{
-        font-size: 3rem
-    }
-    
-    .links{
-        height: 500px;
-    }
-    
-    .footer {
-        height: 100px;
-    }
-    
-    .linksocial {
-        font-size: 1rem;
-    }
-    
-    .socialContainer {
-        display: flex;
-    }
-}
-    
-@media(min-width: 765px) and (max-width: 780px){
-        .socialContainer{
-            display: flex;
-            justify-content: space-around;
-        }
-        
-        .links{
-            height: 430px;
-        }
-        
-        .linksocial{
-            font-size: 2.5rem;
-        }
-        
-        img{
-            width: 25.5vw;
-        }
-        
-        .foot{
-            font-size: 5rem;
-        }
-        
-        .hello{
-            font-size: 3rem;
-        }
-        
-        .footer{
-            height: 150px
-        }
-}
-    
-@media(min-width: 781px) and (max-width: 1440px){
-        .linksocial{
-            font-size: 2.5rem;
-        }
-        
-        .links{
-            height: 340px;
-        }
-        
-        .body{
-            height: 1300px;
-        }
-        
-        .footer{
-            height: 80px;
-        }
-        
-        img {
-            width: 25.6vw;
-        }
-        
-        .socialContainer {
-            display: flex; 
-        }
-}
-      
-      @media(min-width: 1440px){
-        img {
-            width:26.3vw;
-            height: 300px;
-        }
-        
-        .content {
-            height: 910px;
-        }
-        
-        .body {
-            height: 1800px;
-        }
-        
-        .gallery {
-            height: 910px;
-        }
-        
-        .socialContainer {
-            display: flex;
-            justify-content: center;
-        }
-        
-        .links {
-            height: 380px
-        }
-        
-        .linksocial {
-            font-size: 5rem;
-        }
-      } 
-    </style>
-</head>
-<body class="bgpink">
-<div class="body">
-    <div class="header">
-        <h1 class="title"><i>IC1DA</i></h1>
-    </div>
-    <div class="seperate">
-        
-    </div>            
-    <div class="links">
-        <h1 class="social"><p class="hello">We are the section 1C1DA and we are happy you're here<br><br>
-
-Consider checking our memories together (⁠☆⁠▽⁠☆⁠)</p></h1>
-    <div class="socialContainer">
-    <a href="daImages.html" class="linksocial">Images</a>
-    <a href="daVideos.html" class="linksocial">Videos</a>
-    <a href="daStudents.html" class="linksocial">Students</a>
-    <a href="" class="linksocial" id="teach">Teachers</a>
-    </div>
-    </div>
-    <div class="navigation">
-        <i class="h1gallery">Preview</i>
-    </div>
-    <div class="content">
-       <table class="gallery">
-           <tr>
-               <td><img src="received_206600409102580.jpeg" alt="" height="160px" width=""></img></td>
-               <td><img src="received_2080489288972805.jpeg" alt="" height="160px" width=""></img></td>
-               <td><img src="received_264084173103427.jpeg" alt="" height="160px" width=""></img></td>
-           </tr>
-           <tr>
-               <td><img src="received_281714201236691.jpeg" alt="" height="160px" width=""></img></td>
-               <td><img src="received_670475428340726.jpeg" alt="" height="160px" width=""></img></td>
-               <td><img src="received_812884723909183.jpeg" alt="" height="160px" width=""></img></td>
-           </tr>
-           <tr>
-               <td><img src="received_841575574032212.jpeg" alt="" height="160px" width=""></img></td>
-               <td><img src="received_866299977694812.jpeg" alt="" height="160px" width=""></img></td>
-               <td><img src="received_961030961862824.jpeg" alt="" height="160px" width=""></img></td>
-           </tr>
-       </table> 
-    </div>
-    <div class="footer">
-        <i class="foot">Thanks for visiting \"<^-^>"/</i>
-    </div>   
-</div>
-</body>
-</html>
+     </style> 
+ </head> 
+ <body class="bgpink"> 
+ <div class="body"> 
+     <div class="header"> 
+         <h1 class="title"><i>IC1DA</i></h1> 
+     </div> 
+     <div class="seperate"> 
+  
+     </div>             
+     <div class="links"> 
+         <h1 class="social"><p class="hello">We are the section 1C1DA and we are happy you're here<br><br> 
+  
+ Consider checking our memories together (⁠☆⁠▽⁠☆⁠)</p></h1> 
+     <div class="socialContainer"> 
+     <a href="daImages.html" class="linksocial">Images</a> 
+     <a href="daVideos.html" class="linksocial">Videos</a> 
+     <a href="daStudents.html" class="linksocial">Students</a> 
+     <a href="" class="linksocial" id="teach">Teachers</a>
+     <a href="" class="linksocial" id="linksocial">Officers</a> 
+     </div> 
+     </div> 
+     <div class="navigation"> 
+         <i class="h1gallery">Preview</i> 
+     </div> 
+     <div class="content"> 
+        <table class="gallery"> 
+            <tr> 
+                <td><img src="received_206600409102580.jpeg" alt="" height="160px" width=""></img></td> 
+                <td><img src="received_2080489288972805.jpeg" alt="" height="160px" width=""></img></td> 
+                <td><img src="received_264084173103427.jpeg" alt="" height="160px" width=""></img></td> 
+            </tr> 
+            <tr> 
+                <td><img src="received_281714201236691.jpeg" alt="" height="160px" width=""></img></td> 
+                <td><img src="received_670475428340726.jpeg" alt="" height="160px" width=""></img></td> 
+                <td><img src="received_812884723909183.jpeg" alt="" height="160px" width=""></img></td> 
+            </tr> 
+            <tr> 
+                <td><img src="received_841575574032212.jpeg" alt="" height="160px" width=""></img></td> 
+                <td><img src="received_866299977694812.jpeg" alt="" height="160px" width=""></img></td> 
+                <td><img src="received_961030961862824.jpeg" alt="" height="160px" width=""></img></td> 
+            </tr> 
+        </table>  
+     </div> 
+     <div class="footer"> 
+         <i class="foot">Thanks for visiting \"<^-^>"/</i> 
+     </div>    
+ </div> 
+ </body> 
+ </html>
