@@ -5,7 +5,8 @@
      <link rel="stylesheet" href=""> 
      <meta charset="UTF-8"> 
      <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
-     <title>Gallery</title> 
+     <title>Gallery</title>
+     <link rel="stylesheet" href="lightbox.css"> 
      <style> 
  body { 
      background-color:#ffa995; 
@@ -14,21 +15,11 @@
  #container { 
      display: grid; 
      grid-template-columns: repeat(3, 1fr); 
-  
+       
  } 
   
  #container img { 
      cursor: pointer; 
- } 
-  
- .enlarged-image { 
-     position: fixed; 
-     top: 50%; 
-     left: 50%; 
-     transform: translate(-50%, -50%); 
-     z-index: 9999; 
-     height: 500px; 
-     width: 400px; 
  } 
   
  #container img.large{ 
@@ -149,180 +140,177 @@
              <p id="galText">Gallery</p> 
       </div> 
      <div id="container"> 
-         <img src="received_206600409102580.jpeg" alt="" srcset="" height="200px" width="200vw" class="medium" onclick="enlargeImage(this)"></a> 
-         <img src="received_2080489288972805.jpeg" alt="" srcset="" height="200px" width="200vw" class="small" onclick="enlargeImage(this)"></a> 
-         <img src="received_264084173103427.jpeg" alt="" srcset="" height="200px" width="200vw" class="medium" onclick="enlargeImage(this)"></a> 
-         <img src="received_281714201236691.jpeg" alt="" srcset="" height="200px" width="200vw" class="small" onclick="enlargeImage(this)"></a> 
-         <img src="received_670475428340726.jpeg" alt="" srcset="" height="200px" width="200vw" class="medium" onclick="enlargeImage(this)"></a> 
-         <img src="received_812884723909183.jpeg" alt="" srcset="" height="200px" width="200vw" class="large" onclick="enlargeImage(this)"></a> 
-         <img src="received_841575574032212.jpeg" alt="" srcset="" height="200px" width="200vw" class="medium" onclick="enlargeImage(this)"></a> 
-         <img src="received_866299977694812.jpeg" alt="" srcset="" height="200px" width="200vw" class="large" onclick="enlargeImage(this)"></a> 
-         <img src="received_961030961862824.jpeg" alt="" srcset="" height="200px" width="200vw" class="medium" onclick="enlargeImage(this)"></a> 
-         <img src="received_1036671194447226.jpeg" alt="" srcset="" height="200px" width="200vw" class="small" onclick="enlargeImage(this)"></a> 
-         <img src="received_1123859231921775.jpeg" alt="" srcset="" height="200px" width="200vw" class="medium" onclick="enlargeImage(this)"></a> 
-         <img src="received_1167737127517688.jpeg" alt="" srcset="" height="200px" width="200vw" class="small" onclick="enlargeImage(this)"></a> 
-         <img src="received_1269755483728813.jpeg" alt="" srcset="" height="200px" width="200vw" class="medium" onclick="enlargeImage(this)"></a> 
-         <img src="received_1336124273956505.jpeg" alt="" srcset="" height="200px" width="200vw" class="large" onclick="enlargeImage(this)"></a> 
-         <img src="received_1343047403254472.jpeg" alt="" srcset="" height="200px" width="200vw" class="medium" onclick="enlargeImage(this)"></a> 
-         <img src="received_135302392977841.jpeg" alt="" srcset="" height="200px" width="200vw" class="large" onclick="enlargeImage(this)"></a> 
-         <img src="received_1367273893872718.jpeg" alt="" srcset="" height="200px" width="200vw" class="medium" onclick="enlargeImage(this)"></a> 
-         <img src="received_1379583892630555.jpeg" alt="" srcset="" height="200px" width="200vw" class="small" onclick="enlargeImage(this)"></a> 
-         <img src="received_1471942033585041.jpeg" alt="" srcset="" height="200px" width="200vw" class="medium" onclick="enlargeImage(this)"></a> 
-         <img src="received_1530206884196837.jpeg" alt="" srcset="" height="200px" width="200vw" class="small" onclick="enlargeImage(this)"></a> 
-         <img src="received_1752554251862625.jpeg" alt="" srcset="" height="200px" width="200vw" class="medium" onclick="enlargeImage(this)"></a> 
-         <img src="received_206644065770154.jpeg" alt="" srcset="" height="200px" width="200vw" class="large" onclick="enlargeImage(this)"></a> 
-         <img src="received_206702388984618.jpeg" alt="" srcset="" height="200px" width="200vw" class="medium" onclick="enlargeImage(this)"></a> 
-         <img src="received_2253173041540879.jpeg" alt="" srcset="" height="200px" width="200vw" class="large" onclick="enlargeImage(this)"></a> 
-         <img src="received_248507121502110.jpeg" alt="" srcset="" height="200px" width="200vw" class="medium" onclick="enlargeImage(this)"></a> 
-         <img src="received_279668228231885.jpeg" alt="" srcset="" height="200px" width="200vw" class="small" onclick="enlargeImage(this)"></a> 
-         <img src="received_283117554602304.jpeg" alt="" srcset="" height="200px" width="200vw" class="medium" onclick="enlargeImage(this)"></a> 
-         <img src="received_284680781100909.jpeg" alt="" srcset="" height="200px" width="200vw" class="small" onclick="enlargeImage(this)"></a> 
-         <img src="received_309558755108735.jpeg" alt="" srcset="" height="200px" width="200vw" class="medium" onclick="enlargeImage(this)"></a> 
-         <img src="received_320775183975507.jpeg" alt="" srcset="" height="200px" width="200vw" class="large" onclick="enlargeImage(this)"></a> 
-         <img src="received_326499869966801.jpeg" alt="" srcset="" height="200px" width="200vw" class="medium" onclick="enlargeImage(this)"></a> 
-         <img src="received_327341466551041.jpeg" alt="" srcset="" height="200px" width="200vw" class="large" onclick="enlargeImage(this)"></a> 
-         <img src="received_338038981950877.jpeg" alt="" srcset="" height="200px" width="200vw" class="medium" onclick="enlargeImage(this)"></a> 
-         <img src="received_339282658561629.jpeg" alt="" srcset="" height="200px" width="200vw" class="small" onclick="enlargeImage(this)"></a> 
-         <img src="received_3437937213090701.jpeg" alt="" srcset="" height="200px" width="200vw" class="medium" onclick="enlargeImage(this)"></a> 
-         <img src="received_348192507544322.jpeg" alt="" srcset="" height="200px" width="200vw" class="small" onclick="enlargeImage(this)"></a> 
-         <img src="received_351594473877566.jpeg" alt="" srcset="" height="200px" width="200vw" class="medium" onclick="enlargeImage(this)"></a> 
-         <img src="received_5855574124544842.jpeg" alt="" srcset="" height="200px" width="200vw" class="large" onclick="enlargeImage(this)"></a> 
-         <img src="received_627001152677837.jpeg" alt="" srcset="" height="200px" width="200vw" class="medium" onclick="enlargeImage(this)"></a> 
-         <img src="received_634578048849891.jpeg" alt="" srcset="" height="200px" width="200vw" class="large" onclick="enlargeImage(this)"></a> 
-         <img src="received_642302944679236.jpeg" alt="" srcset="" height="200px" width="200vw" class="medium" onclick="enlargeImage(this)"></a>  
-          <img src="received_656926176417286.jpeg" alt="" srcset="" height="200px" width="200vw" class="small" onclick="enlargeImage(this)"></a>  
-          <img src="received_6587499174675159.jpeg" alt="" srcset="" height="200px" width="200vw" class="medium" onclick="enlargeImage(this)"></a>  
-          <img src="received_6676382935732378.jpeg" alt="" srcset="" height="200px" width="200vw" class="small" onclick="enlargeImage(this)"></a>  
-          <img src="received_6778941125527743.jpeg" alt="" srcset="" height="200px" width="200vw" class="medium" onclick="enlargeImage(this)"></a>  
-          <img src="received_686711416856432.jpeg" alt="" srcset="" height="200px" width="200vw" class="large" onclick="enlargeImage(this)"></a>  
-          <img src="received_687741933236074.jpeg" alt="" srcset="" height="200px" width="200vw" class="medium" onclick="enlargeImage(this)"></a>  
-          <img src="received_693663622347816.jpeg" alt="" srcset="" height="200px" width="200vw" class="large" onclick="enlargeImage(this)"></a>  
-          <img src="received_730564165297431.jpeg" alt="" srcset="" height="200px" width="200vw" class="medium" onclick="enlargeImage(this)"></a>  
-          <img src="received_850716710046946.jpeg" alt="" srcset="" height="200px" width="200vw" class="small" onclick="enlargeImage(this)"></a>  
-          <img src="received_854704116315409.jpeg" alt="" srcset="" height="200px" width="200vw" class="medium" onclick="enlargeImage(this)"></a>  
-          <img src="received_854996489218151.jpeg" alt="" srcset="" height="200px" width="200vw" class="small" onclick="enlargeImage(this)"></a>  
-          <img src="received_856550832342180.jpeg" alt="" srcset="" height="200px" width="200vw" class="medium" onclick="enlargeImage(this)"></a>  
-          <img src="received_870980610788958.jpeg" alt="" srcset="" height="200px" width="200vw" class="large" onclick="enlargeImage(this)"></a>  
-          <img src="received_874212300987464.jpeg" alt="" srcset="" height="200px" width="200vw" class="medium" onclick="enlargeImage(this)"></a>  
-          <img src="received_980319443259320.jpeg" alt="" srcset="" height="200px" width="200vw" class="large" onclick="enlargeImage(this)"></a>  
-          <img src="" alt="" srcset="" height="200px" width="200vw" class="medium" onclick="enlargeImage(this)"></a>  
-          <img src="" alt="" srcset="" height="200px" width="200vw" class="small" onclick="enlargeImage(this)"></a>  
-          <img src="" alt="" srcset="" height="200px" width="200vw" class="medium" onclick="enlargeImage(this)"></a>  
-          <img src="" alt="" srcset="" height="200px" width="200vw" class="small" onclick="enlargeImage(this)"></a>  
-          <img src="" alt="" srcset="" height="200px" width="200vw" class="medium" onclick="enlargeImage(this)"></a>  
-          <img src="" alt="" srcset="" height="200px" width="200vw" class="large" onclick="enlargeImage(this)"></a>  
-          <img src="" alt="" srcset="" height="200px" width="200vw" class="medium" onclick="enlargeImage(this)"></a>  
-          <img src="" alt="" srcset="" height="200px" width="200vw" class="large" onclick="enlargeImage(this)"></a>  
-          <img src="" alt="" srcset="" height="200px" width="200vw" class="medium" onclick="enlargeImage(this)"></a>  
-          <img src="" alt="" srcset="" height="200px" width="200vw" class="small" onclick="enlargeImage(this)"></a>  
-          <img src="" alt="" srcset="" height="200px" width="200vw" class="medium" onclick="enlargeImage(this)"></a>  
-          <img src="" alt="" srcset="" height="200px" width="200vw" class="small" onclick="enlargeImage(this)"></a>  
-          <img src="" alt="" srcset="" height="200px" width="200vw" class="medium" onclick="enlargeImage(this)"></a>  
-          <img src="" alt="" srcset="" height="200px" width="200vw" class="large" onclick="enlargeImage(this)"></a>  
-          <img src="" alt="" srcset="" height="200px" width="200vw" class="medium" onclick="enlargeImage(this)"></a>  
-          <img src="" alt="" srcset="" height="200px" width="200vw" class="large" onclick="enlargeImage(this)"></a>  
-          <img src="" alt="" srcset="" height="200px" width="200vw" class="medium" onclick="enlargeImage(this)"></a>  
-          <img src="" alt="" srcset="" height="200px" width="200vw" class="small" onclick="enlargeImage(this)"></a>  
-          <img src="" alt="" srcset="" height="200px" width="200vw" class="medium" onclick="enlargeImage(this)"></a>  
-          <img src="" alt="" srcset="" height="200px" width="200vw" class="small" onclick="enlargeImage(this)"></a>  
-          <img src="" alt="" srcset="" height="200px" width="200vw" class="medium" onclick="enlargeImage(this)"></a>  
-          <img src="" alt="" srcset="" height="200px" width="200vw" class="large" onclick="enlargeImage(this)"></a>  
-          <img src="" alt="" srcset="" height="200px" width="200vw" class="medium" onclick="enlargeImage(this)"></a>  
-          <img src="" alt="" srcset="" height="200px" width="200vw" class="large" onclick="enlargeImage(this)"></a> 
-          <img src="" alt="" srcset="" height="200px" width="200vw" class="medium" onclick="enlargeImage(this)"></a>  
-          <img src="" alt="" srcset="" height="200px" width="200vw" class="small" onclick="enlargeImage(this)"></a>  
-          <img src="" alt="" srcset="" height="200px" width="200vw" class="medium" onclick="enlargeImage(this)"></a>  
-          <img src="" alt="" srcset="" height="200px" width="200vw" class="small" onclick="enlargeImage(this)"></a>  
-          <img src="" alt="" srcset="" height="200px" width="200vw" class="medium" onclick="enlargeImage(this)"></a>  
-          <img src="" alt="" srcset="" height="200px" width="200vw" class="large" onclick="enlargeImage(this)"></a>  
-          <img src="" alt="" srcset="" height="200px" width="200vw" class="medium" onclick="enlargeImage(this)"></a>  
-          <img src="" alt="" srcset="" height="200px" width="200vw" class="large" onclick="enlargeImage(this)"></a>  
-          <img src="" alt="" srcset="" height="200px" width="200vw" class="medium" onclick="enlargeImage(this)"></a>  
-          <img src="" alt="" srcset="" height="200px" width="200vw" class="small" onclick="enlargeImage(this)"></a>  
-          <img src="" alt="" srcset="" height="200px" width="200vw" class="medium" onclick="enlargeImage(this)"></a>  
-          <img src="" alt="" srcset="" height="200px" width="200vw" class="small" onclick="enlargeImage(this)"></a>  
-          <img src="" alt="" srcset="" height="200px" width="200vw" class="medium" onclick="enlargeImage(this)"></a>  
-          <img src="" alt="" srcset="" height="200px" width="200vw" class="large" onclick="enlargeImage(this)"></a>  
-          <img src="" alt="" srcset="" height="200px" width="200vw" class="medium" onclick="enlargeImage(this)"></a>  
-          <img src="" alt="" srcset="" height="200px" width="200vw" class="large" onclick="enlargeImage(this)"></a>  
-          <img src="" alt="" srcset="" height="200px" width="200vw" class="medium" onclick="enlargeImage(this)"></a>  
-          <img src="" alt="" srcset="" height="200px" width="200vw" class="small" onclick="enlargeImage(this)"></a>  
-          <img src="" alt="" srcset="" height="200px" width="200vw" class="medium" onclick="enlargeImage(this)"></a>  
-          <img src="" alt="" srcset="" height="200px" width="200vw" class="small" onclick="enlargeImage(this)"></a>  
-          <img src="" alt="" srcset="" height="200px" width="200vw" class="medium" onclick="enlargeImage(this)"></a>  
-          <img src="" alt="" srcset="" height="200px" width="200vw" class="large" onclick="enlargeImage(this)"></a>  
-          <img src="" alt="" srcset="" height="200px" width="200vw" class="medium" onclick="enlargeImage(this)"></a>  
-          <img src="" alt="" srcset="" height="200px" width="200vw" class="large" onclick="enlargeImage(this)"></a>  
-          <img src="" alt="" srcset="" height="200px" width="200vw" class="medium" onclick="enlargeImage(this)"></a>  
-          <img src="" alt="" srcset="" height="200px" width="200vw" class="small" onclick="enlargeImage(this)"></a>  
-          <img src="" alt="" srcset="" height="200px" width="200vw" class="medium" onclick="enlargeImage(this)"></a>  
-          <img src="" alt="" srcset="" height="200px" width="200vw" class="small" onclick="enlargeImage(this)"></a>  
-          <img src="" alt="" srcset="" height="200px" width="200vw" class="medium" onclick="enlargeImage(this)"></a>  
-          <img src="" alt="" srcset="" height="200px" width="200vw" class="large" onclick="enlargeImage(this)"></a>  
-          <img src="" alt="" srcset="" height="200px" width="200vw" class="medium" onclick="enlargeImage(this)"></a>  
-          <img src="" alt="" srcset="" height="200px" width="200vw" class="large" onclick="enlargeImage(this)"></a>  
-          <img src="" alt="" srcset="" height="200px" width="200vw" class="medium" onclick="enlargeImage(this)"></a>  
-          <img src="" alt="" srcset="" height="200px" width="200vw" class="small" onclick="enlargeImage(this)"></a>  
-          <img src="" alt="" srcset="" height="200px" width="200vw" class="medium" onclick="enlargeImage(this)"></a>  
-          <img src="" alt="" srcset="" height="200px" width="200vw" class="small" onclick="enlargeImage(this)"></a>  
-          <img src="" alt="" srcset="" height="200px" width="200vw" class="medium" onclick="enlargeImage(this)"></a>  
-          <img src="" alt="" srcset="" height="200px" width="200vw" class="large" onclick="enlargeImage(this)"></a>  
-          <img src="" alt="" srcset="" height="200px" width="200vw" class="medium" onclick="enlargeImage(this)"></a>  
-          <img src="" alt="" srcset="" height="200px" width="200vw" class="large" onclick="enlargeImage(this)"></a> 
-          <img src="" alt="" srcset="" height="200px" width="200vw" class="medium" onclick="enlargeImage(this)"></a>  
-          <img src="" alt="" srcset="" height="200px" width="200vw" class="small" onclick="enlargeImage(this)"></a>  
-          <img src="" alt="" srcset="" height="200px" width="200vw" class="medium" onclick="enlargeImage(this)"></a>  
-          <img src="" alt="" srcset="" height="200px" width="200vw" class="small" onclick="enlargeImage(this)"></a>  
-          <img src="" alt="" srcset="" height="200px" width="200vw" class="medium" onclick="enlargeImage(this)"></a>  
-          <img src="" alt="" srcset="" height="200px" width="200vw" class="large" onclick="enlargeImage(this)"></a>  
-          <img src="" alt="" srcset="" height="200px" width="200vw" class="medium" onclick="enlargeImage(this)"></a>  
-          <img src="" alt="" srcset="" height="200px" width="200vw" class="large" onclick="enlargeImage(this)"></a>  
-          <img src="" alt="" srcset="" height="200px" width="200vw" class="medium" onclick="enlargeImage(this)"></a>  
-          <img src="" alt="" srcset="" height="200px" width="200vw" class="small" onclick="enlargeImage(this)"></a>  
-          <img src="" alt="" srcset="" height="200px" width="200vw" class="medium" onclick="enlargeImage(this)"></a>  
-          <img src="" alt="" srcset="" height="200px" width="200vw" class="small" onclick="enlargeImage(this)"></a>  
-          <img src="" alt="" srcset="" height="200px" width="200vw" class="medium" onclick="enlargeImage(this)"></a>  
-          <img src="" alt="" srcset="" height="200px" width="200vw" class="large" onclick="enlargeImage(this)"></a>  
-          <img src="" alt="" srcset="" height="200px" width="200vw" class="medium" onclick="enlargeImage(this)"></a>  
-          <img src="" alt="" srcset="" height="200px" width="200vw" class="large" onclick="enlargeImage(this)"></a>  
-          <img src="" alt="" srcset="" height="200px" width="200vw" class="medium" onclick="enlargeImage(this)"></a>  
-          <img src="" alt="" srcset="" height="200px" width="200vw" class="small" onclick="enlargeImage(this)"></a>  
-          <img src="" alt="" srcset="" height="200px" width="200vw" class="medium" onclick="enlargeImage(this)"></a>  
-          <img src="" alt="" srcset="" height="200px" width="200vw" class="small" onclick="enlargeImage(this)"></a>  
-          <img src="" alt="" srcset="" height="200px" width="200vw" class="medium" onclick="enlargeImage(this)"></a>  
-          <img src="" alt="" srcset="" height="200px" width="200vw" class="large" onclick="enlargeImage(this)"></a>  
-          <img src="" alt="" srcset="" height="200px" width="200vw" class="medium" onclick="enlargeImage(this)"></a>  
-          <img src="" alt="" srcset="" height="200px" width="200vw" class="large" onclick="enlargeImage(this)"></a>  
-          <img src="" alt="" srcset="" height="200px" width="200vw" class="medium" onclick="enlargeImage(this)"></a>  
-          <img src="" alt="" srcset="" height="200px" width="200vw" class="small" onclick="enlargeImage(this)"></a>  
-          <img src="" alt="" srcset="" height="200px" width="200vw" class="medium" onclick="enlargeImage(this)"></a>  
-          <img src="" alt="" srcset="" height="200px" width="200vw" class="small" onclick="enlargeImage(this)"></a>  
-          <img src="" alt="" srcset="" height="200px" width="200vw" class="medium" onclick="enlargeImage(this)"></a>  
-          <img src="" alt="" srcset="" height="200px" width="200vw" class="large" onclick="enlargeImage(this)"></a>  
-          <img src="" alt="" srcset="" height="200px" width="200vw" class="medium" onclick="enlargeImage(this)"></a>  
-          <img src="" alt="" srcset="" height="200px" width="200vw" class="large" onclick="enlargeImage(this)"></a>  
-          <img src="" alt="" srcset="" height="200px" width="200vw" class="medium" onclick="enlargeImage(this)"></a>  
-          <img src="" alt="" srcset="" height="200px" width="200vw" class="small" onclick="enlargeImage(this)"></a>  
-          <img src="" alt="" srcset="" height="200px" width="200vw" class="medium" onclick="enlargeImage(this)"></a>  
-          <img src="" alt="" srcset="" height="200px" width="200vw" class="small" onclick="enlargeImage(this)"></a>  
-          <img src="" alt="" srcset="" height="200px" width="200vw" class="medium" onclick="enlargeImage(this)"></a>  
-          <img src="" alt="" srcset="" height="200px" width="200vw" class="large" onclick="enlargeImage(this)"></a>  
-          <img src="" alt="" srcset="" height="200px" width="200vw" class="medium" onclick="enlargeImage(this)"></a>  
-          <img src="" alt="" srcset="" height="200px" width="200vw" class="large" onclick="enlargeImage(this)"></a> 
+         <a href="received_206600409102580.jpeg" data-lightbox="Gallery" data-title="IC1DA">
+             <img src="received_206600409102580.jpeg" alt="" srcset="" height="200px" width="200vw" class="medium">
+         </a>
+         <a href="received_2080489288972805.jpeg" data-lightbox="Gallery" data-title="IC1DA">
+             <img src="received_2080489288972805.jpeg" alt="" srcset="" height="200px" width="200vw" class="medium">
+         </a> 
+         <a href="received_264084173103427.jpeg" data-lightbox="Gallery" data-title="IC1DA">
+             <img src="received_264084173103427.jpeg" alt="" srcset="" height="200px" width="200vw" class="medium">
+         </a>
+         <a href="received_281714201236691.jpeg" data-lightbox="Gallery" data-title="IC1DA">
+             <img src="received_281714201236691.jpeg" alt="" srcset="" height="200px" width="200vw" class="medium">
+         </a>
+         <a href="received_670475428340726.jpeg" data-lightbox="Gallery" data-title="IC1DA">
+             <img src="received_670475428340726.jpeg" alt="" srcset="" height="200px" width="200vw" class="medium">
+         </a>
+         <a href="received_812884723909183.jpeg" data-lightbox="Gallery" data-title="IC1DA">
+             <img src="received_812884723909183.jpeg" alt="" srcset="" height="200px" width="200vw" class="medium">
+         </a>
+         <a href="received_841575574032212.jpeg" data-lightbox="Gallery" data-title="IC1DA">
+             <img src="received_841575574032212.jpeg" alt="" srcset="" height="200px" width="200vw" class="medium">
+         </a>
+         <a href="received_961030961862824.jpeg" data-lightbox="Gallery" data-title="IC1DA">
+             <img src="received_961030961862824.jpeg" alt="" srcset="" height="200px" width="200vw" class="medium">
+         </a>
+          <a href="received_1036671194447226.jpeg" data-lightbox="Gallery" data-title="IC1DA">
+             <img src="received_1036671194447226.jpeg" alt="" srcset="" height="200px" width="200vw" class="medium">
+         </a>
+          <a href="received_1123859231921775.jpeg" data-lightbox="Gallery" data-title="IC1DA">
+             <img src="received_1123859231921775.jpeg" alt="" srcset="" height="200px" width="200vw" class="medium">
+         </a>
+          <a href="received_1167737127517688.jpeg" data-lightbox="Gallery" data-title="IC1DA">
+             <img src="received_1167737127517688.jpeg" alt="" srcset="" height="200px" width="200vw" class="medium">
+         </a>
+          <a href="received_1269755483728813.jpeg" data-lightbox="Gallery" data-title="IC1DA">
+             <img src="received_1269755483728813.jpeg" alt="" srcset="" height="200px" width="200vw" class="medium">
+         </a>
+         <a href="received_1336124273956505.jpeg" data-lightbox="Gallery" data-title="IC1DA">
+             <img src="received_1336124273956505.jpeg" alt="" srcset="" height="200px" width="200vw" class="medium">
+         </a>
+         <a href="received_1343047403254472.jpeg" data-lightbox="Gallery" data-title="IC1DA">
+             <img src="received_1343047403254472.jpeg" alt="" srcset="" height="200px" width="200vw" class="medium">
+         </a>
+         <a href="received_135302392977841.jpeg" data-lightbox="Gallery" data-title="IC1DA">
+             <img src="received_135302392977841.jpeg" alt="" srcset="" height="200px" width="200vw" class="medium">
+         </a>
+         <a href="received_1367273893872718.jpeg" data-lightbox="Gallery" data-title="IC1DA">
+             <img src="received_1367273893872718.jpeg" alt="" srcset="" height="200px" width="200vw" class="medium">
+         </a>
+         <a href="received_1379583892630555.jpeg" data-lightbox="Gallery" data-title="IC1DA">
+             <img src="received_1379583892630555.jpeg" alt="" srcset="" height="200px" width="200vw" class="medium">
+         </a>
+         <a href="received_1471942033585041.jpeg" data-lightbox="Gallery" data-title="IC1DA">
+             <img src="received_1471942033585041.jpeg" alt="" srcset="" height="200px" width="200vw" class="medium">
+         </a>
+         <a href="received_1530206884196837.jpeg" data-lightbox="Gallery" data-title="IC1DA">
+             <img src="received_1530206884196837.jpeg" alt="" srcset="" height="200px" width="200vw" class="medium">
+         </a>
+         <a href="received_206644065770154.jpeg" data-lightbox="Gallery" data-title="IC1DA">
+             <img src="received_206644065770154.jpeg" alt="" srcset="" height="200px" width="200vw" class="medium">
+         </a>
+         <a href="received_1752554251862625.jpeg" data-lightbox="Gallery" data-title="IC1DA">
+             <img src="received_1752554251862625.jpeg" alt="" srcset="" height="200px" width="200vw" class="medium">
+         </a>
+         <a href="received_206702388984618.jpeg" data-lightbox="Gallery" data-title="IC1DA">
+             <img src="received_206702388984618.jpeg" alt="" srcset="" height="200px" width="200vw" class="medium">
+         </a>
+         <a href="received_2253173041540879.jpeg" data-lightbox="Gallery" data-title="IC1DA">
+             <img src="received_2253173041540879.jpeg" alt="" srcset="" height="200px" width="200vw" class="medium">
+         </a>
+         <a href="received_248507121502110.jpeg" data-lightbox="Gallery" data-title="IC1DA">
+             <img src="received_248507121502110.jpeg" alt="" srcset="" height="200px" width="200vw" class="medium">
+         </a>
+         <a href="received_279668228231885.jpeg" data-lightbox="Gallery" data-title="IC1DA">
+             <img src="received_279668228231885.jpeg" alt="" srcset="" height="200px" width="200vw" class="medium">
+         </a>
+         <a href="received_283117554602304.jpeg" data-lightbox="Gallery" data-title="IC1DA">
+             <img src="received_283117554602304.jpeg" alt="" srcset="" height="200px" width="200vw" class="medium">
+         </a>
+         <a href="received_284680781100909.jpeg" data-lightbox="Gallery" data-title="IC1DA">
+             <img src="received_284680781100909.jpeg" alt="" srcset="" height="200px" width="200vw" class="medium">
+         </a>
+         <a href="received_309558755108735.jpeg" data-lightbox="Gallery" data-title="IC1DA">
+             <img src="received_309558755108735.jpeg" alt="" srcset="" height="200px" width="200vw" class="medium">
+         </a>
+         <a href="received_320775183975507.jpeg" data-lightbox="Gallery" data-title="IC1DA">
+             <img src="received_320775183975507.jpeg" alt="" srcset="" height="200px" width="200vw" class="medium">
+         </a>
+         <a href="received_326499869966801.jpeg" data-lightbox="Gallery" data-title="IC1DA">
+             <img src="received_326499869966801.jpeg" alt="" srcset="" height="200px" width="200vw" class="medium">
+         </a>
+         <a href="received_327341466551041.jpeg" data-lightbox="Gallery" data-title="IC1DA">
+             <img src="received_327341466551041.jpeg" alt="" srcset="" height="200px" width="200vw" class="medium">
+         </a>
+         <a href="received_338038981950877.jpeg" data-lightbox="Gallery" data-title="IC1DA">
+             <img src="received_338038981950877.jpeg" alt="" srcset="" height="200px" width="200vw" class="medium">
+         </a>
+         <a href="received_339282658561629.jpeg" data-lightbox="Gallery" data-title="IC1DA">
+             <img src="received_339282658561629.jpeg" alt="" srcset="" height="200px" width="200vw" class="medium">
+         </a>
+         <a href="received_3437937213090701.jpeg" data-lightbox="Gallery" data-title="IC1DA">
+             <img src="received_3437937213090701.jpeg" alt="" srcset="" height="200px" width="200vw" class="medium">
+         </a>
+         <a href="received_348192507544322.jpeg" data-lightbox="Gallery" data-title="IC1DA">
+             <img src="received_348192507544322.jpeg" alt="" srcset="" height="200px" width="200vw" class="medium">
+         </a>
+         <a href="received_351594473877566.jpeg" data-lightbox="Gallery" data-title="IC1DA">
+             <img src="received_351594473877566.jpeg" alt="" srcset="" height="200px" width="200vw" class="medium">
+         </a>
+         <a href="received_5855574124544842.jpeg" data-lightbox="Gallery" data-title="IC1DA">
+             <img src="received_5855574124544842.jpeg" alt="" srcset="" height="200px" width="200vw" class="medium">
+         </a>
+         <a href="received_627001152677837.jpeg" data-lightbox="Gallery" data-title="IC1DA">
+             <img src="received_627001152677837.jpeg" alt="" srcset="" height="200px" width="200vw" class="medium">
+         </a>
+         <a href="received_327341466551041.jpeg" data-lightbox="Gallery" data-title="IC1DA">
+             <img src="received_327341466551041.jpeg" alt="" srcset="" height="200px" width="200vw" class="medium">
+         </a>
+         <a href="received_634578048849891.jpeg" data-lightbox="Gallery" data-title="IC1DA">
+             <img src="received_634578048849891.jpeg" alt="" srcset="" height="200px" width="200vw" class="medium">
+         </a>
+         <a href="received_642302944679236.jpeg" data-lightbox="Gallery" data-title="IC1DA">
+             <img src="received_642302944679236.jpeg" alt="" srcset="" height="200px" width="200vw" class="medium">
+         </a>
+         <a href="received_656926176417286.jpeg" data-lightbox="Gallery" data-title="IC1DA">
+             <img src="received_656926176417286.jpeg" alt="" srcset="" height="200px" width="200vw" class="medium">
+         </a>
+         <a href="received_6587499174675159.jpeg" data-lightbox="Gallery" data-title="IC1DA">
+             <img src="received_6587499174675159.jpeg" alt="" srcset="" height="200px" width="200vw" class="medium">
+         </a> 
+         <a href="received_6676382935732378.jpeg" data-lightbox="Gallery" data-title="IC1DA">
+             <img src="received_6676382935732378.jpeg" alt="" srcset="" height="200px" width="200vw" class="medium">
+         </a> 
+         <a href="received_6778941125527743.jpeg" data-lightbox="Gallery" data-title="IC1DA">
+             <img src="received_6778941125527743.jpeg" alt="" srcset="" height="200px" width="200vw" class="medium">
+         </a> 
+         <a href="received_686711416856432.jpeg" data-lightbox="Gallery" data-title="IC1DA">
+             <img src="received_686711416856432.jpeg" alt="" srcset="" height="200px" width="200vw" class="medium">
+         </a> 
+         <a href="received_687741933236074.jpeg" data-lightbox="Gallery" data-title="IC1DA">
+             <img src="received_687741933236074.jpeg" alt="" srcset="" height="200px" width="200vw" class="medium">
+         </a> 
+         <a href="received_693663622347816.jpeg" data-lightbox="Gallery" data-title="IC1DA">
+             <img src="received_693663622347816.jpeg" alt="" srcset="" height="200px" width="200vw" class="medium">
+         </a> 
+         <a href="received_730564165297431.jpeg" data-lightbox="Gallery" data-title="IC1DA">
+             <img src="received_730564165297431.jpeg" alt="" srcset="" height="200px" width="200vw" class="medium">
+         </a> 
+         <a href="received_850716710046946.jpeg" data-lightbox="Gallery" data-title="IC1DA">
+             <img src="received_850716710046946.jpeg" alt="" srcset="" height="200px" width="200vw" class="medium">
+         </a> 
+         <a href="received_854704116315409.jpeg" data-lightbox="Gallery" data-title="IC1DA">
+             <img src="received_854704116315409.jpeg" alt="" srcset="" height="200px" width="200vw" class="medium">
+         </a> 
+         <a href="received_854996489218151.jpeg" data-lightbox="Gallery" data-title="IC1DA">
+             <img src="received_854996489218151.jpeg" alt="" srcset="" height="200px" width="200vw" class="medium">
+         </a> 
+         <a href="received_856550832342180.jpeg" data-lightbox="Gallery" data-title="IC1DA">
+             <img src="received_856550832342180.jpeg" alt="" srcset="" height="200px" width="200vw" class="medium">
+         </a> 
+         <a href="received_870980610788958.jpeg" data-lightbox="Gallery" data-title="IC1DA">
+             <img src="received_870980610788958.jpeg" alt="" srcset="" height="200px" width="200vw" class="medium">
+         </a> 
+         <a href="received_874212300987464.jpeg" data-lightbox="Gallery" data-title="IC1DA">
+             <img src="received_874212300987464.jpeg" alt="" srcset="" height="200px" width="200vw" class="medium">
+         </a> 
+         <a href="received_980319443259320.jpeg" data-lightbox="Gallery" data-title="IC1DA">
+             <img src="received_980319443259320.jpeg" alt="" srcset="" height="200px" width="200vw" class="medium">
+         </a>   
      </div>      
      </div> 
-     <script> 
-         function enlargeImage(image) { 
-             var enlargedImage = document.createElement('img'); 
-             enlargedImage.src = image.src; 
-             enlargedImage.alt = image.alt; 
-             enlargedImage.classList.add('enlarged-image'); 
-             document.body.appendChild(enlargedImage); 
-  
-             enlargedImage.addEventListener('click', function() { 
-                 document.body.removeChild(enlargedImage) 
-             }) 
-         } 
+     <script src="lightbox.js"> 
      </script> 
  </body> 
  </html>
