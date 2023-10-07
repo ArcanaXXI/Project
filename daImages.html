@@ -9,7 +9,7 @@
      <link rel="stylesheet" href="lightbox.css"> 
      <style> 
  body { 
-     background-color: black;
+     background-image: url('received_1231239521602904.webp');
      font-size: 5em; 
  } 
   
@@ -48,12 +48,13 @@
  #banner { 
     border: solid 3px;  
     min-width: 200px; 
-    height: 100px; 
+    min-height: 200px; 
     display: flex; 
     justify-content: center; 
     flex-flow: column nowrap; 
     align-items: center; 
-    background-color: #fff4d5;
+    background-image: url('received_6991449680916274.webp');
+    background-size: 100% 100%;
     margin-bottom: 10px; 
  } 
   
@@ -87,12 +88,20 @@
  @media(min-width:760px) and (max-width: 920px){ 
      #container { 
        grid-template-columns: repeat(5, 1fr); 
+     }
+     
+     #banner {
+         height: 260px;
      } 
  } 
   
  @media(min-width: 920px) and (max-width: 1200px){ 
      #container { 
        grid-template-columns: repeat(5, 1fr); 
+     }
+     
+     #banner {
+         height: 320px;
      } 
  } 
   
@@ -100,11 +109,19 @@
      #container { 
        grid-template-columns: repeat(5, 1fr); 
      } 
+     
+     #banner {
+         height: 420px;
+     }
  } 
   
  @media(min-width: 1800px) and (max-width: 2400px){ 
      #container { 
        grid-template-columns: repeat(5, 1fr); 
+     }
+     
+     #banner {
+         height: 520px;
      } 
  } 
   
@@ -112,13 +129,16 @@
      #container { 
        grid-template-columns: repeat(5, 1fr); 
      } 
+     
+     #banner {
+         height: 620px;
+     }
  } 
      </style> 
  </head> 
  <body>
      <div class="backButton"><button><a href="ic1da.html">Back</a></button></div> 
      <div id="banner"> 
-             <p id="galText">Gallery</p> 
       </div> 
      <div id="container"> 
          <a href="received_206600409102580.jpeg" data-lightbox="Gallery" data-title="IC1DA">
