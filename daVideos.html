@@ -4,9 +4,13 @@
     <meta name="viewport" content="width-device-width, initial-scale=1.0"/>
     <title>Videos</title>
     <style>
+        body {
+            background-image: url('received_1231239521602904.webp');
+        }
         
-        video {
+        video, iframe {
             margin: 0 auto;
+            margin-bottom: 20px;
         }
         
         #container {
@@ -30,7 +34,37 @@
             flex-flow: column wrap;
             justify-content: center;
             align-content: center;
-        }
+        }    
+    
+@media(min-width: 320px) and (max-width: 420px){
+     video, iframe {
+        height: 28vh;
+    }
+}
+
+@media(min-width: 820px) and (max-width: 1220px){
+    video, iframe {
+        height: 31vh;
+    }
+}
+
+@media(min-width: 1220px) and (max-width: 1620px){
+    video, iframe {
+        height: 32vh;
+    }
+}
+
+@media(min-width: 1620px) and (max-width: 2220px){
+    video, iframe {
+        height: 33vh;
+    }
+}
+
+@media(min-width: 2220px){
+    video, iframe {
+        height: 34vh;
+    }
+}
     </style>
 </head>
 <body class="bodyContainer">
@@ -44,6 +78,14 @@
             <iframe height="300vh" width="80%" src="https://1drv.ms/v/s!AhtoIezTfQdWjhM3axRmslN6EbWx">
             </iframe>
             <iframe height="300vh" width="80%" src="https://1drv.ms/v/s!AhtoIezTfQdWjhKeSMKO1R0iqU0q">
+            </iframe>
+            <iframe height="300vh" width="80%" src="https://1drv.ms/v/s!AhtoIezTfQdWjkSKtJgS2nbe2Vl-">
+            </iframe>
+            <iframe height="300vh" width="80%" src="https://1drv.ms/v/s!AhtoIezTfQdWjkVuoPerNTZPTSvQ">
+            </iframe>
+            <iframe height="300vh" width="80%" src="https://1drv.ms/v/s!AhtoIezTfQdWjkaomQflMHRhm3pH">
+            </iframe>
+            <iframe height="300vh" width="80%" src="https://1drv.ms/v/s!AhtoIezTfQdWjkhb9-_jkUR5yNzC">
             </iframe>
         </div>
     </div>
