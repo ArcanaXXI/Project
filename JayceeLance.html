@@ -7,8 +7,9 @@
 </head>
 <style>
     body {
-        font-size: 1.2rem;
         background-image: url('received_1231239521602904.webp');
+        display: flex;
+        justify-content: center;
     }
     
     #mainContent {
@@ -39,11 +40,12 @@
    
    #aboutMe {
        text-align: center;
-       font-size: 3rem;
+       font-size: calc(3vw + 3vh);
    }
    
    .details, .quotes {
        text-align: center;
+       font-size: calc(1.5vw + 1.5vh);
    }
    
    .favColors {
@@ -66,10 +68,11 @@
    .dream {
        text-align: center;
        border: solid 3px;
+       font-size: calc(1.5vw + 1.5vh);
    }
    
    #favoriteColors {
-       font-size: 2rem;
+       font-size: calc(2vw + 2vh);
        transform: skew(5deg);
    }
    
@@ -88,6 +91,12 @@
    .quotes {
        font-size: 1.5rem;
    }
+   
+@media(min-aspect-ratio: 4/3) {
+    #mainContent {
+        width: 70vw;
+    }
+}
 </style>
 <body>
   <div id="mainContent">
