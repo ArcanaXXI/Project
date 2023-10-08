@@ -3,96 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <title>Page title</title>
-    <meta name="viewport" content="width-device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width@-device-width, initial-scale=1.0"/>
 </head>
 <style>
-    #container {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        width: 100%;
-        height: 200px;
+    body {
+        font-size: 1.2rem;
+        background-image: url('received_1231239521602904.webp');
     }
     
-    .container-2 {
+    #mainContent {
+        height: 100vh;
+        display: grid;
+        grid-template: 1fr 1fr / 1fr 1fr;
+    }
+    
+    #item-1 {
         display: flex;
         justify-content: center;
+        align-items: center;
     }
     
-    img {
-        border-radius: 30%;
-        border: solid 4px;
-        border-color: blue;
-        margin-top: 20px;
+    #item-2, #item-3, #item-4{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-flow: column nowrap;
     }
+    
+   .profilePic {
+       border: solid 3px;
+       height: 50%;
+       width: 80%;
+       transform: skew(5deg);
+   }
    
-@media(min-width: 320px) and (max-width: 420px){
-    #container {
-        height: 250px;
-    }
-}
-    
-@media(min-width: 600px) and (max-width: 800px){
-    p {
-        font-size: 1.6rem;
-    }
-    
-    img {
-        height: 230px;
-    }
-    
-    #container {
-        height: 300px;
-    }
-}
-
-@media(min-width: 800px) and (max-width: 1500px){
-    p {
-        font-size: 2rem;
-    }
-    
-    img {
-        height: 320px;
-    }
-    
-    #container {
-        height: 400px;
-    }
-}
-
-@media(min-width: 1500px) and (max-width: 2600px){
-    p {
-        font-size: 3rem;
-    }
-    
-    img {
-        margin-top: 40px;
-        height: 500px;
-    }
-    
-    #container {
-        height: 600px;
-    }
-}
+   #aboutMe {
+       text-align: center;
+       font-size: 3rem;
+   }
+   
+   .details, .quotes {
+       text-align: center;
+   }
+   
+   .favColors {
+       height: 20%;
+       width: 80%;
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+       transform: skew(5deg);
+       background-color: white;
+   }
+   
+   .color1 , .color2 , .color3 {
+       border-radius: 50%;
+       border: solid 3px;
+       width: 28%;
+       height: 30%
+   }
+   
+   .dream {
+       text-align: center;
+       border: solid 3px;
+   }
+   
+   #favoriteColors {
+       font-size: 2rem;
+       transform: skew(5deg);
+   }
+   
+   .color1 {
+       background-color: red;
+   }
+   
+   .color2 {
+       background-color: yellow;
+   }
+   
+   .color3 {
+       background-color: green;
+   }
 </style>
 <body>
-    <div id="container">
-        <div id="items">
-        <p id=""><strong>Name:</strong></p>
-        <p id=" ">Adrid, Jaycee Lance Casta</p>
-        <p id=" "><strong>Address:</strong></p>
-        <p id=" ">Somewhere in the philippines</p>
-        <p id=" "><strong>Hobbies:</strong></p>
-        <p id=" ">i'll ask Airah later</p>
-        </div>
-        <div id="items" class="container-2">
-        <img src="received_206600409102580.jpeg" srcset="" height="150px" width="auto">
-        </div>
-    </div>
-        <p id=" "><strong>Bio:</strong></p>
-        <p id=" ">Goku first appears in Dragon Ball as a monkey-tailed child adopted by the hermit martial artist Gohan. Before the series' narrative begins, he accidentally and unknowingly kills Gohan when he temporarily transforms into the mighty Ōzaru after staring at a full moon. Goku loses the ability when his friends cut off his tail.
-
-Living alone with an item known as a Dragon Ball which he keeps as a memento of Gohan, Goku befriends a teenage girl named Bulma. He joins her to find the seven Dragon Balls, which, when gathered, summon the wish-granting dragon Shenron. They encounter the desert bandit Yamcha and two shapeshifters named Oolong and Puar, who join their quest. Goku is later trained by the martial artist Master Roshi, alongside a monk named Krillin, who later becomes his best friend. It is Roshi who gives Goku the magic cloud Kinto'un , as a reward for saving his pet sea turtle, which becomes Goku's primary source of flight travel across the world.</p>
-      <p id=" "><strong>Dream:</strong></p>
-     <p id=" ">Become a professional Musician</p>
+  <div id="mainContent">
+      <div id="item-1">
+          <div class="profilePic"></div>
+      </div>
+      <div id="item-2">
+          <div id="aboutMe">About<br><strong>Me</strong></div>
+          <div class="details">mediocritatem electram autem vitae netus mandamus noluisse persius curae recteque eloquentiam unum agam veniam ullamcorper</div>
+      </div>
+      <div id="item-3">
+         <div id="aboutMe">About<br><strong>Me</strong></div>
+         <div class="details">solet melius odio purus aperiri audire utinam assueverit fusce fermentum liber reque graecis expetendis scelerisque parturient eirmod ludus affert reprimique delicata adipiscing error iisque atqui</div>
+         <div class="quotes"><i>"Time is Gold"</i></div> 
+      </div>
+      <div id="item-4">
+          <div id="favoriteColors">Favorite Colors</div>
+          <div class="favColors">
+             <div class="color1"></div>
+             <div class="color2"></div>
+             <div class="color3"></div>
+          </div>
+          <div class="dream"><strong>My Dream</strong><br>I Giorno Giovanna have a dream orci latine atqui cetero nibh inimicus alienum atomorum hinc quodtation maiestatis</div>
+      </div>
+  </div>
 </body>
-</html>
+</html
