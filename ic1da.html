@@ -78,7 +78,7 @@
   
   
  .title { 
-     font-size: 5rem; 
+     font-size: calc(5vw + 5vh); 
      font-weight: bolder; 
      text-align: center; 
      margin: 1.25rem auto; 
@@ -90,13 +90,13 @@
  } 
   
  .hello { 
-     font-size: 2.50rem; 
+     font-size: calc(2.5vw + 2.5vh); 
      font-weight: bolder; 
      text-align: center; 
  } 
   
  .linksocial { 
-     font-size: 2rem; 
+     font-size: calc(1.2vw + 1.2vh); 
      border: solid 3px; 
      margin: 1.25rem auto; 
      padding: 0.50rem;      
@@ -120,14 +120,14 @@
  } 
  
  .h1gallery { 
-     font-size: 5.625rem; 
+     font-size: calc(5.6vw + 5.6vh); 
      font-weight: bolder; 
      color: white; 
      border-radius: 30%;   
  } 
   
  .foot { 
-     font-size: 4.6875rem; 
+     font-size: calc(4.6vw + 4.6vh); 
      font-weight: bolder; 
      color: white; 
      margin: auto;    
@@ -143,11 +143,11 @@
      }
  
      .h1gallery { 
-         font-size: 2rem; 
+         font-size: calc(2vw + 2vh); 
      } 
   
      .hello { 
-         font-size: 1rem; 
+         font-size: calc(1vw + 1vh); 
      } 
      .socialContainer { 
         display: flex; 
@@ -165,7 +165,7 @@
      } 
   
     .foot{ 
-     font-size: 1.8rem; 
+     font-size: calc(1.8vw + 1.8vh); 
      } 
   
     .navigation { 
@@ -187,11 +187,11 @@
   
  @media(min-width: 375px) and (max-width: 435px){ 
      .h1gallery { 
-         font-size: 3rem; 
+         font-size: calc(3vw + 3vh); 
      } 
   
      .hello { 
-         font-size: 1.8rem; 
+         font-size: calc(1.8vw + 1.8vh); 
      } 
      .socialContainer { 
         display: flex; 
@@ -199,8 +199,7 @@
         align-items: flex-start; 
      } 
   
-     .linksocial { 
-     font-size: 0.6rem; 
+     .linksocial {
      border: solid 3px; 
      margin: 1rem auto;     
      padding: 0.43rem; 
@@ -208,19 +207,19 @@
      text-decoration: none; 
      color: white; 
      font-weight: bolder; 
-     background-color: grey; 
+     background-color: grey;
+     font-size: calc(1vw + 1vh); 
      } 
   
      .links { 
      border: solid 4px; 
      min-height: 300px; 
      width: 89%; 
-     margin: 0.3125rem auto; 
-     background-size: 100vw 100vw;       
+     margin: 0.3125rem auto;
      } 
   
      .foot{ 
-         font-size: 2rem; 
+         font-size: calc(2vw + 2vh); 
      } 
   
     .navigation{ 
@@ -242,7 +241,7 @@
   
  @media(min-width: 435px) and (max-width: 480px){ 
      .foot { 
-         font-size: 3rem;
+         font-size: calc(2vw + 2vh);
      } 
   
      .links { 
@@ -254,7 +253,7 @@
      } 
   
      .linksocial { 
-         font-size: 0.8rem; 
+         font-size: calc(1vw + 1vh); 
      } 
   
      .socialContainer { 
@@ -266,15 +265,11 @@
      }
      
      .foot {
-         font-size: 3rem;
+         font-size: calc(3vw + 3vh);
      } 
  } 
  
 @media(min-width: 480px) and (max-width: 530px){
-     .foot { 
-         font-size: 3rem;
-     } 
-  
      .links { 
          min-height: 400px; 
      } 
@@ -282,53 +277,37 @@
      .footer { 
          min-height: 80px; 
      } 
-  
-     .linksocial { 
-         font-size: 1rem; 
-     } 
-  
+    
      .socialContainer { 
          display: flex; 
      } 
 }
 
 @media(min-width: 530px) and (max-width: 590px){
-     .foot { 
-         font-size: 3rem;
-     } 
-  
      .links { 
          min-height: 400px; 
      } 
   
      .footer { 
          min-height: 80px; 
-     } 
-  
-     .linksocial { 
-         font-size: 1.2rem; 
      } 
   
      .socialContainer { 
          display: flex; 
+     }
+     
+     .linksocial {
+         font-size: calc(1.2vw + 1.2vh);
      } 
 }
 
-@media(min-width: 590px) and (max-width: 765px){
-     .foot { 
-         font-size: 3rem;
-     } 
-  
+@media(min-width: 590px) and (max-width: 765px){  
      .links { 
          min-height: 400px; 
      } 
   
      .footer { 
          min-height: 80px; 
-     } 
-  
-     .linksocial { 
-         font-size: 1.4rem; 
      } 
   
      .socialContainer { 
@@ -346,18 +325,6 @@
              min-height: 430px; 
          } 
   
-         .linksocial{ 
-             font-size: 2rem; 
-         } 
-  
-         .foot{ 
-             font-size: 5rem; 
-         } 
-  
-         .hello{ 
-             font-size: 3rem; 
-         } 
-  
          .footer{ 
              min-height: 90px 
          } 
@@ -368,10 +335,6 @@
              height: 400px;
          }
 
-         .linksocial{ 
-             font-size: 1.6rem; 
-         } 
-  
          .links{ 
              min-height: 340px; 
          } 
@@ -393,20 +356,12 @@
              height: 700px;
          }
          
-         .hello {
-             font-size: 2.5rem;
-         }
  } 
 
 @media(min-width: 860px) and (max-width: 1440px){ 
          .header {
              height: 400px;
-         }
-
-         .linksocial{ 
-             font-size: 2rem; 
          } 
-  
          .links{ 
              min-height: 340px; 
          } 
@@ -426,10 +381,6 @@
          
          .content {
              height: 700px;
-         }
-         
-         .hello {
-             font-size: 2.5rem;
          }
  } 
   
@@ -446,7 +397,7 @@
          }
 
          .title {
-             font-size: 6rem;
+             font-size: calc(3vw + 3vh);
          }
        
          .content { 
@@ -467,12 +418,8 @@
          } 
   
          .linksocial { 
-             font-size: 2.6rem; 
+             font-size: calc(1vw + 1vh); 
          } 
-         
-         .hello {
-             font-size: 4rem;
-         }
        }  
        
 @media(min-width: 2200px){
@@ -481,7 +428,7 @@
          }
 
          .title {
-             font-size: 6rem;
+             font-size: calc(6vw + 6vh);
          }
        
          .content { 
@@ -503,11 +450,7 @@
          } 
   
          .linksocial { 
-             font-size: 4rem; 
-         }
-         
-         .hello {
-             font-size: 3.5rem;
+             font-size: calc(4vw + 4vh); 
          }
 }
      </style> 
