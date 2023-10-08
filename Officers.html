@@ -2,82 +2,75 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Page title</title>
     <style>
-        .title {
-            font-size: 6rem;
-            font-weight: bolder;
+        .Body {
+            font-size: calc(1.5vw + 1.5vh);
+            height: 150vh;
+            width: 100vw;
+            border: solid 3px;
+            display: grid;
+            grid-template-areas:
+            "President President"
+            "vPresident secretary";
         }
         
-        .banner {
-            height: 130px;
+        .President , vPresident , .secretary {
+            border: solid 3px;
+        }
+        
+        .President , .vPresident , .secretary {
+            grid-area: President;
             display: flex;
-            justify-content: center;
+            flex-flow: column wrap;
+            justify-content: space-around;
             align-items: center;
         }
         
-        .flexContainer {
-           display: flex;
-           justify-content: center;
-           align-items: flex-start;
-           flex-wrap: wrap;
-           border: solid 3px;
-        }        
-        
-        .circle {
-           background-color: white;
-           border-radius: 50%;
-           height: 250px;
-           width: 230px;
-           border: solid 3px;
+        .vPresident {
+            grid-area: vPresident;
         }
         
-        .mottoText {
-            font-size: 2rem;
-            margin: 20px;
+        .secretary {
+            grid-area: secretary;
         }
         
-        .gridContainer-1 {
+        .pressPic {
+            height: 20%;
+            width: 30%;
             border: solid 3px;
-            height: 600px;
-            display: grid;
-            grid-template-columns: repeat(2 , 1fr);
-            width: 100%;
+            border-radius: 50%;
         }
         
-@media(min-width: 2560px){
-        .mottoText {
-            font-size: 4rem;
+        .vPPic, .sPic {
+            height: 20%;
+            width: 60%;
+            border: solid 3px;
+            border-radius: 50%;
         }
         
-        .circle {
-            height: 450px;
-            width: 430px;
+        .title {
+            font-size: calc(3vh + 3vw);
         }
-        
-        .gridContainer-1 {
-            height: 1000px;
-        }
-}
     </style>
 </head>
 <body>
-    <div class="banner"><p class="title">Class Officers</p></div>
-    <div class="flexContainer-1">
-        <div class="flexContainer">
-            <div class="circle"></div>
-            <p class="mottoText">Natumelectram posidonium ligula tortor dolores prodesset repudiare sapien quem reprimique recteque postea solum placerat feugait hendrerit deseruisse efficiantur.  Aptentluctus patrioque.</p>
-            <p class="mottoText">Natumelectram posidonium ligula tortor dolores prodesset repudiare sapien quem reprimique recteque postea solum placerat feugait hendrerit deseruisse efficiantur.  Aptentluctus patrioque.</p>
-            <p class="mottoText">Natumelectram posidonium ligula tortor dolores prodesset repudiare sapien quem reprimique recteque postea solum placerat feugait hendrerit deseruisse efficiantur.  Aptentluctus patrioque.</p>
+    <div class="Body">
+        <div class="President">
+            <div class="title"><strong>President</strong></div>
+            <div class="pressPic"></div>
+            <div class="motto"><i>referrentur luctus curae quis</i></div>
         </div>
-    <div class="gridContainer-1">
-        <div class="flexContainer">
-            <div class="circle"></div>
-            <p class="mottoText">Natumelectram posidonium ligula tortor dolores prodesset repudiare sapien quem reprimique recteque postea solum placerat feugait hendrerit deseruisse efficiantur.  Aptentluctus patrioque.</p>
+        <div class="vPresident">
+            <div class="title"><strong>V.President</strong></div>
+            <div class="vPPic"></div>
+            <div class="motto"><i>referrentur luctus curae quis</i></div>
         </div>
-        <div class="flexContainer">
-            <div class="circle"></div>
-            <p class="mottoText">Natumelectram posidonium ligula tortor dolores prodesset repudiare sapien quem reprimique recteque postea solum placerat feugait hendrerit deseruisse efficiantur.  Aptentluctus patrioque.</p>
+        <div class="secretary">
+            <div class="title"><strong>Secretary</strong></div>
+            <div class="sPic"></div>
+            <div class="motto"><i>referrentur luctus curae quis</i></div>
         </div>
     </div>
 </body>
