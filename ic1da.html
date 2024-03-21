@@ -13,7 +13,7 @@
  .body { 
      border: solid 4px; 
      height: auto; 
-     width: 90%; 
+     width: 50vw; 
      margin: 0 auto; 
      margin-top: 2.5rem; 
      background-color: #393631; 
@@ -21,7 +21,7 @@
   
   
  .header { 
-     border: solid 4px; 
+     border: solid 4px;
      min-height: 180px; 
      width: 89%; 
      margin: 0.3125rem auto;
@@ -97,7 +97,7 @@
  .linksocial { 
      font-size: calc(1.2vw + 1.2vh); 
      border: solid 3px; 
-     margin: 1.2rem auto; 
+     margin-left: 0.4rem; 
      padding: 0.50rem;      
      border-radius: 20%; 
      text-decoration: none; 
@@ -119,14 +119,14 @@
  } 
  
  .h1gallery { 
-     font-size: calc(5.6vw + 5.6vh); 
+     font-size: calc(3.5vw + 3.5vh); 
      font-weight: bolder; 
      color: white; 
      border-radius: 30%;   
  } 
   
  .foot { 
-     font-size: calc(4.6vw + 4.6vh); 
+     font-size: calc(3.5vw + 3.5vh); 
      font-weight: bolder; 
      color: white; 
      margin: auto;    
@@ -135,295 +135,6 @@
  .linksocial:hover { 
      background-color: blue; 
  } 
-  
- @media(min-width: 260px) and (max-width: 375px){ 
-     .header {
-         min-height: 100px;
-     }
- 
-     .h1gallery { 
-         font-size: calc(2vw + 2vh); 
-     } 
-  
-     .hello { 
-         font-size: calc(1vw + 1vh); 
-     } 
-     .socialContainer { 
-        display: flex; 
-        flex-flow: row nowrap; 
-        align-items: flex-start; 
-     } 
-  
-     .linksocial { 
-     font-size: 0.6rem;
-     padding: 2px;
-     } 
-  
-     .links { 
-     min-height: 200px;     
-     } 
-  
-    .foot{ 
-     font-size: calc(1.8vw + 1.8vh); 
-     } 
-  
-    .navigation { 
-     height: auto; 
-    } 
-  
-    .content{ 
-     height: 260px; 
-    } 
-  
-    .body{ 
-     height: auto; 
-    } 
- } 
-  
- @media(min-width: 375px) and (max-width: 435px){ 
-     .h1gallery { 
-         font-size: calc(3vw + 3vh); 
-     } 
-  
-     .hello { 
-         font-size: calc(1.8vw + 1.8vh); 
-     } 
-     .socialContainer { 
-        display: flex; 
-        flex-flow: row nowrap; 
-        align-items: flex-start; 
-     } 
-  
-     .linksocial {
-     border: solid 3px; 
-     margin: 1rem auto;     
-     padding: 0.43rem; 
-     border-radius: 20%; 
-     text-decoration: none; 
-     color: white; 
-     font-weight: bolder; 
-     background-color: grey;
-     font-size: calc(1vw + 1vh); 
-     } 
-  
-     .links { 
-     border: solid 4px; 
-     min-height: 300px; 
-     width: 89%; 
-     margin: 0.3125rem auto;
-     } 
-  
-     .foot{ 
-         font-size: calc(2vw + 2vh); 
-     } 
-  
-    .navigation{ 
-        min-height: 30px; 
-    } 
-  
-    .content{ 
-        height: 285px; 
-    } 
-  
-    .body{ 
-        height: auto; 
-    } 
- } 
-  
- @media(min-width: 435px) and (max-width: 480px){ 
-     .foot { 
-         font-size: calc(2vw + 2vh);
-     } 
-  
-     .links { 
-         height: 320px; 
-     } 
-     
-     .linksocial { 
-         font-size: calc(1vw + 1vh); 
-     } 
-  
-     .socialContainer { 
-         display: flex;
-     }
-     
-     .content {
-         height: 360px;
-     }
-     
-     .foot {
-         font-size: calc(3vw + 3vh);
-     } 
- } 
- 
-@media(min-width: 480px) and (max-width: 530px){
-     .links { 
-         min-height: 400px; 
-     } 
-      
-     .socialContainer { 
-         display: flex; 
-     } 
-}
-
-@media(min-width: 530px) and (max-width: 590px){
-     .links { 
-         min-height: 400px; 
-     } 
-    
-     .socialContainer { 
-         display: flex; 
-     }
-     
-     .linksocial {
-         font-size: calc(1.2vw + 1.2vh);
-     } 
-}
-
-@media(min-width: 590px) and (max-width: 765px){  
-     .links { 
-         min-height: 400px; 
-     } 
-     
-     .socialContainer { 
-         display: flex; 
-     }
-     
-     .header {
-         height: 340px;
-     } 
-}
-  
- @media(min-width: 765px) and (max-width: 780px){ 
-         .socialContainer{ 
-             display: flex; 
-             justify-content: space-around; 
-         } 
-  
-         .links{ 
-             min-height: 430px; 
-         } 
-         
-         .header {
-             height: 370px;
-         }
- } 
-  
-@media(min-width: 780px) and (max-width: 860px){ 
-         .header {
-             height: 400px;
-         }
-
-         .links{ 
-             min-height: 400px; 
-         } 
-  
-         .body{ 
-             height: auto;
-             width: 80%; 
-         } 
-  
-         .socialContainer { 
-             display: flex;  
-         }
-         
-         .content {
-             height: 700px;
-         }
-         
- } 
-
-@media(min-width: 860px) and (max-width: 1440px){ 
-         .header {
-             height: 400px;
-         } 
-         .links{ 
-             min-height: 400px; 
-         } 
-  
-         .body{ 
-             height: auto;
-             width: 80%; 
-         } 
-  
-         .socialContainer { 
-             display: flex;  
-         }
-         
-         .content {
-             height: 700px;
-         }
- } 
-  
-
-  
-@media(min-width: 1440px) and (max-width: 2200px){ 
-         .body {
-             height: auto;
-             width: 60%;
-         }
-
-         .header {
-             min-height: 350px;
-         }
-
-         .title {
-             font-size: calc(3vw + 3vh);
-         }
-       
-         .content { 
-             height: 910px; 
-         } 
-  
-         .body { 
-             min-height: 1800px; 
-         } 
-  
-         .socialContainer { 
-             display: flex; 
-             justify-content: center; 
-         } 
-  
-         .links { 
-             min-height: 420px; 
-         } 
-  
-         .linksocial { 
-             font-size: calc(1.5vw + 1.5vh); 
-         } 
-       }  
-       
-@media(min-width: 2200px){
-         .header {
-             min-height: 500px;
-         }
-
-         .title {
-             font-size: calc(5vw + 5vh);
-         }
-       
-         .content { 
-             height: 1100px; 
-         } 
-  
-         .body { 
-             height: auto;
-             width: 73%;
-         } 
-  
-         .socialContainer { 
-             display: flex; 
-             justify-content: center; 
-         } 
-  
-         .links { 
-             min-height: 500px 
-         } 
-  
-         .linksocial { 
-             font-size: calc(1.5vw + 1.5vh); 
-         }
-}
      </style> 
  </head> 
  <body class="bgpink"> 
@@ -439,8 +150,8 @@
      <a href="daImages.html" class="linksocial">Images</a> 
      <a href="daVideos.html" class="linksocial">Videos</a> 
      <a href="daStudents.html" class="linksocial">Students</a> 
-     <a href="daTeachers.html" class="linksocial" id="teach">Teachers</a>
-     <a href="Officers.html" class="linksocial" id="linksocial">Officers</a> 
+     <a href="daTeachers.html" class="linksocial">Teachers</a>
+     <a href="Officers.html" class="linksocial">Officers</a> 
      </div> 
      </div> 
      <div class="navigation"> 
