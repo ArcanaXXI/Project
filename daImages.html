@@ -10,12 +10,12 @@
      <style> 
  body { 
      background-image: url('received_1231239521602904.webp');
-     font-size: 5em; 
+     font-size: 5em;
  } 
   
  #container { 
      display: grid; 
-     grid-template-columns: auto auto auto; 
+     grid-template-columns: auto auto auto auto auto auto; 
      grid-gap: 5px;
      align-items: center;     
  } 
@@ -46,7 +46,9 @@
  } 
   
  #banner { 
-    border: solid 3px;  
+    margin: auto;
+    border: solid 3px; 
+    width: 40vw; 
     min-width: 200px; 
     min-height: 200px; 
     display: flex; 
@@ -85,6 +87,11 @@
      border-color: white; 
  }
  
+  .butLink {
+      text-decoration: none;
+      color: black;
+  }
+ 
   .button-74 {
   background-color: #fbeee0;
   border: 2px solid #422800;
@@ -113,68 +120,11 @@
   .button-74:active {
   box-shadow: #422800 2px 2px 0 0;
   transform: translate(2px, 2px);
-}
-
-@media (min-width: 768px) {
-    .button-74 {
-    min-width: 120px;
-    padding: 0 25px;
-  }
 } 
-  
- @media(min-width:760px) and (max-width: 920px){ 
-     #container { 
-       grid-template-columns: repeat(5, 1fr); 
-     }
-     
-     #banner {
-         height: 260px;
-     } 
- } 
-  
- @media(min-width: 920px) and (max-width: 1200px){ 
-     #container { 
-       grid-template-columns: repeat(5, 1fr); 
-     }
-     
-     #banner {
-         height: 320px;
-     } 
- } 
-  
- @media(min-width: 1200px) and (max-width: 1800px){ 
-     #container { 
-       grid-template-columns: repeat(5, 1fr); 
-     } 
-     
-     #banner {
-         height: 420px;
-     }
- } 
-  
- @media(min-width: 1800px) and (max-width: 2400px){ 
-     #container { 
-       grid-template-columns: repeat(5, 1fr); 
-     }
-     
-     #banner {
-         height: 520px;
-     } 
- } 
-  
- @media(min-width: 2400px){  
-     #container { 
-       grid-template-columns: repeat(5, 1fr); 
-     } 
-     
-     #banner {
-         height: 620px;
-     }
- } 
      </style> 
  </head> 
  <body>
-     <div class="backButton"><button class="button-74"><a href="ic1da.html">Back</a></button></div> 
+     <div class="backButton"><button class="button-74"><a href="ic1da.html" class="butLink">Back</a></button></div> 
      <div id="banner"> 
       </div> 
      <div id="container"> 
@@ -346,11 +296,6 @@
          <a href="received_980319443259320.jpeg" data-lightbox="Gallery" data-title="IC1DA">
              <img src="received_980319443259320.jpeg" alt="" srcset="" height="200px" width="200vw" class="medium">
          </a>
-         
-         
-         
-         
-         
          <a href="img-10-08-1.jpeg" data-lightbox="Gallery" data-title="IC1DA">
              <img src="img-10-08-1.jpeg" alt="" srcset="" height="200px" width="200vw" class="medium">
          </a>
